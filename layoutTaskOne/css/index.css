@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #fff;
+}
+body:not(a){
+    -webkit-user-select: none;
+}
+a{
+    text-decoration: none;
+}
+
+img{
+    max-width: 100%;
+}
+.wrapper{
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(27,13,0,1) 100%);
+}
+.container{
+    width: 1440px;
+    margin: 0 auto;
+}
+header{
+    padding: 50px 0;
+}
+header .logo{
+    text-transform: uppercase;
+    font-size: 29px;
+    font-weight: 800;
+}
+header nav{
+    float: right;
+    width: 50%;
+}
+header nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+header nav ul li{
+    position: relative;
+    display: inline-block;
+    z-index: 2;
+}
+header nav ul li a{
+    color: #fff;
+}
+header nav ul li.active::after{
+    content: '';
+    display: block;
+    width: 40px;
+    height: 5px;
+    background: #DC7000;
+    border-radius: 10px;
+    position: relative;
+    top: 10px;
+    left: -15px;
+}
+header nav ul li:not(.active):not(.btn) a:hover {
+    border-bottom: 5px solid #DC7000;
+}
+header nav ul li.btn a{
+    background: #FA9021;
+    padding: 9px 17px;
+    border-radius: 5px;
+    transition: all 500ms ease;
+}
+header nav ul li.btn a:hover{
+    background: #DC7000;
+}
+.hero{
+    padding-bottom: 100px;
+    position: relative;
+    z-index: 1;
+}
+.hero--info{
+    width: 500px;
+    padding-top: 70px;
+}
+.hero--info h2{
+    color: #E87D0E;
+    font-size: 20px;
+    font-weight: 600;
+}
+.hero--info h1{
+    font-size: 50px;
+    font-weight: 600;
+}
+.hero--info p{
+    font-weight: 500; 
+    line-height: 200%;
+    margin: 30px 0;
+}
+.hero--info .btn{
+    background: linear-gradient(90deg, rgba(250,131,5,1) 0%, rgba(251,158,60,1) 100%);
+    color: #fff;
+    border-radius: 50px;
+    padding: 15px 30px;
+    font-size: 17px;
+    font-weight: 500; 
+    border: 0;
+    transition: all 500ms ease;
+}
+.hero--info .btn:hover{
+    cursor: pointer;
+    transform: scale(110%);
+}
+.hero img{
+    position: absolute;
+    top: -150px;
+    right: 0px;
+}
+
+/*Игры*/
+.trending{
+    padding-top: 50px;
+}
+.trending h3{
+    font-weight: 600;
+    font-size: 31px;
+    padding-bottom: 30px;
+}
+.trending .see-all{
+    font-weight: 500;
+    font-size: 20px;
+    color: #fff;
+    padding: 12px 23px;
+    background: #24211c;
+    border-radius: 5px;
+    float: right;
+    display: block;
+    transition: all 500ms ease;
+}
+.trending .see-all:hover{
+    transform: scale(110%);
+}
+.trending .games{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 50px 0;
+}
+.trending .games span{
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+}
+.trending .games span img{
+    position: relative;
+    top: 5px;
+    margin-right: 7px;
+}
+.big-text p{
+    font-size: 35px;
+    font-weight: 600;
+    padding: 50px 0;
+    margin: 0 auto;
+    text-align: center;
+    width: 800px;
+}
+.banner{
+    padding: 80px 0;
+}
+.banner h3{
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+.banner p{
+    line-height: 170%;
+    margin-bottom: 30px;
+    width: 550px;
+}
+.banner img{
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+/*Игровые девайсы*/
+
+.features {
+    background: url('/image/pictureBackground.svg') no-repeat center fixed;
+    background-size: cover;
+    padding: 80px 0;
+}
+.features h3, 
+.features p{
+    margin: 0 auto 20px auto ;
+    text-align: center;
+    max-width: 800px;
+}
+.features h3{
+    font-size: 30px;
+    font-weight: 600;
+}
+.features .info{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.features .info .block{
+    text-align: center;
+    width: 20%;
+    margin: 30px 2%;
+}
+.features .info .block img{
+    margin-bottom: 15px;
+}
+.projects {
+    padding: 100px 0;
+}
+.projects h3{
+    font-size: 30px;
+    text-align: center;
+}
+.projects p{
+    margin: 40px 0;
+    text-align: center;
+}
+.projects .images{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 25px;
+}
+.projects .see-all{
+    width: 70px;
+    text-align: center;
+    margin: 0 auto;
+    font-weight: 500;
+    font-size: 20px;
+    color: #fff;
+    padding: 12px 23px;
+    background: #24211c;
+    border-radius: 5px;
+    float: none;
+    display: block;
+    transition: all 500ms ease;
+}
+.projects .see-all:hover{
+    transform: scale(110%);
+}
