@@ -100,7 +100,7 @@
         </div>
     </div>
     <div class="wrapper">
-        <div class="cotainer projects">
+        <div class="container projects">
             <h3>Our Recent Projects</h3>
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting<br>industry.</p>
             <div class="images">
@@ -117,7 +117,7 @@
         </div>
         <div class="container email">
             <h3>Lorem Ipsum</h3>
-            <P>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</P>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
             <div class="block">
                 <div>
                     <h4>Stay in the loop</h4>
@@ -125,11 +125,43 @@
                     We promise not to spam you!</p>
                 </div>
                 <div>
-                    <input type="email" placeholder="Enter email address">
-                    <button>Continue</button>
+                    <input type="email" id="emailFile" placeholder="Enter email address">
+                    <button onclick="checkEmail()">Continue</button>
                 </div>
             </div>
         </div>
     </div>
+    <footer>
+        <div class="blocks container">
+            <div>
+                <span class="logo">logo</span>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            </div>
+            <div>
+                <h4>About us</h4>
+                <ul>
+                    <li>Zeux</li>
+                    <li>Portfolio</li>
+                    <li>Careers</li>
+                    <li>Contact us</li>                                     
+                </ul>
+            </div>
+            <div class="contactUs">
+                <h4>Contact us</h4>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                <p>+908 89097 890</p>
+            </div>
+        </div>
+        <hr>
+        <p>Copyright ® 2021 Lorem All rights Rcerved</p>
+    </footer>
+    <script>
+        function checkEmail(){
+            let email = document.querySelector('#emailFile').value;
+            if(!email.includes('@')) alert('Нет символа @');
+            else if(!email.includes('.')) alert('Нет символа .');
+            else alert('Все супер!');
+        }
+    </script>
 </body>
 </html>

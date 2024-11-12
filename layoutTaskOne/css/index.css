@@ -1,26 +1,26 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;800&display=swap');/*Подгрузка шрифтов*/
 *{
     margin: 0;
     padding: 0;
 }
 body{
     font-family: "Poppins", sans-serif;
-    font-weight: 400;
+    font-weight: 400;/*Толщина шрифта*/
     font-size: 16px;
     color: #fff;
 }
 body:not(a){
-    -webkit-user-select: none;
+    -webkit-user-select: none;/*Отказ пользователю на выделение элементов страницы*/
 }
 a{
-    text-decoration: none;
+    text-decoration: none;/*Убрать нижние подчеркивание у всех ссылок*/
 }
 
 img{
     max-width: 100%;
 }
 .wrapper{
-    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(27,13,0,1) 100%);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(27,13,0,1) 100%);/*Создание градиента*/
 }
 .container{
     width: 1440px;
@@ -29,8 +29,9 @@ img{
 header{
     padding: 50px 0;
 }
-header .logo{
-    text-transform: uppercase;
+header .logo, 
+footer .blocks .logo{
+    text-transform: uppercase;/*Возведение всего текста в верхний регистр*/
     font-size: 29px;
     font-weight: 800;
 }
@@ -51,7 +52,7 @@ header nav ul li{
 header nav ul li a{
     color: #fff;
 }
-header nav ul li.active::after{
+header nav ul li.active::after{/*Добавление контента после элемента*/
     content: '';
     display: block;
     width: 40px;
@@ -65,13 +66,13 @@ header nav ul li.active::after{
 header nav ul li:not(.active):not(.btn) a:hover {
     border-bottom: 5px solid #DC7000;
 }
-header nav ul li.btn a{
+header nav ul li.btn a, .email .block button{
     background: #FA9021;
     padding: 9px 17px;
     border-radius: 5px;
-    transition: all 500ms ease;
+    transition: all 500ms ease;/*Все элементы (all), продолжительность (500ms), вид анимации (ease)*/
 }
-header nav ul li.btn a:hover{
+header nav ul li.btn a:hover, .email .block button:hover{
     background: #DC7000;
 }
 .hero{
@@ -105,11 +106,11 @@ header nav ul li.btn a:hover{
     font-size: 17px;
     font-weight: 500; 
     border: 0;
-    transition: all 500ms ease;
+    transition: all 500ms ease;/*Все элементы (all), продолжительность (500ms), вид анимации (ease)*/
 }
 .hero--info .btn:hover{
-    cursor: pointer;
-    transform: scale(110%);
+    cursor: pointer;/*Меняется вид курсора*/
+    transform: scale(110%);/*Анимация масштабирования элемента*/
 }
 .hero img{
     position: absolute;
@@ -135,10 +136,10 @@ header nav ul li.btn a:hover{
     border-radius: 5px;
     float: right;
     display: block;
-    transition: all 500ms ease;
+    transition: all 500ms ease;/*Все элементы (all), продолжительность (500ms), вид анимации (ease)*/
 }
 .trending .see-all:hover{
-    transform: scale(110%);
+    transform: scale(110%);/*Анимация масштабирования элемента*/
 }
 .trending .games{
     display: flex;
@@ -148,7 +149,7 @@ header nav ul li.btn a:hover{
 }
 .trending .games span{
     display: block;
-    text-align: center;
+    text-align: center;/*Выравнивание по горизонтали*/
     margin-top: 20px;
 }
 .trending .games span img{
@@ -173,7 +174,7 @@ header nav ul li.btn a:hover{
     margin-bottom: 30px;
 }
 .banner p{
-    line-height: 170%;
+    line-height: 170%;/*Растояние между строками*/
     margin-bottom: 30px;
     width: 550px;
 }
@@ -186,7 +187,7 @@ header nav ul li.btn a:hover{
 
 .features {
     background: url('/layoutTaskOne/image/pictureBackground.svg') no-repeat center fixed;
-    background-size: cover;
+    background-size: cover;/*Изображение становиться фиксированным. Если начать скролить, то оно остается на месте*/
     padding: 80px 0;
 }
 .features h3, 
@@ -202,7 +203,7 @@ header nav ul li.btn a:hover{
 .features .info{
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
+    flex-wrap: wrap;/*Установка границы, до которой будет отображаться текст*/
 }
 .features .info .block{
     text-align: center;
@@ -240,9 +241,103 @@ header nav ul li.btn a:hover{
     background: #24211c;
     border-radius: 5px;
     float: none;
-    display: block;
-    transition: all 500ms ease;
+    display: block;/*Элемент ведет себя как блочный: растягивается по ширине и выходит на новую строку*/
+    transition: all 500ms ease;/*Все элементы (all), продолжительность (500ms), вид анимации (ease)*/
 }
-.projects .see-all:hover{
-    transform: scale(110%);
+.projects .see-all:hover{/*Наведение курсора на объект*/
+    transform: scale(110%);/*Анимация масштабирования элемента*/
+}
+
+/*Footer*/
+.email{
+    padding-bottom: 120px;
+}
+.email p{
+    width: 550px;
+}
+.email h3{
+    margin-top: 60px;
+    font-size: 30px;
+}
+.email .block{
+    background: #1c150f;
+    margin-top: 60px;
+    padding: 30px 3%;
+    border-radius: 10px;
+    width: 94%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;/*Выравнивание по вертикали*/
+}
+.email .block h4{
+    font-size: 30px;
+    font-weight: 500;
+}
+.email .block p{
+    width: 500px;
+}
+.email .block input{
+    background: #fff;
+    outline: none;
+    border: 0;
+    border-radius: 5px;
+    width: 380px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400; 
+    padding: 20px 30px;
+    position: relative;
+    right: -110px;
+    z-index: 1;
+    padding-right: 130px;
+}
+.email .block input::placeholder{/*::placeholder <-- Содержание объекта input*/
+    color: #898989;
+}
+.email .block button{
+    cursor: pointer;
+    border: 0;
+    padding: 13px 17px;
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    padding-left: 20px;
+    font-size: 13px;
+    font-weight: 400;
+}
+footer{
+    background: #000;
+    padding: 50px 0;
+}
+footer .blocks{
+    display: flex;
+    justify-content: space-around;
+    text-align: left;
+}
+footer .blocks p{
+    width: 333px;
+    margin: 15px 0;
+    text-align: left;
+}
+footer .blocks .contactUs p{
+    width: 282px;
+}
+footer .blocks h4{
+    font-size: 17px;
+    font-weight: 500;
+}
+footer .blocks ul{
+    list-style-type: none;
+}
+footer .blocks ul li{
+    margin-top: 7px;
+    opacity: 80%; /*Прозрачность элемента*/
+}
+footer hr{/*Убираем линию и создаем ее вручную*/
+    margin: 40px 0;
+    border: 0;
+    height: 0.6px;
+    background: #ccc;
+}
+footer p{
+    text-align: center;
 }
