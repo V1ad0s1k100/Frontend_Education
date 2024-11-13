@@ -145,3 +145,68 @@ footer nav ul .sing:hover>a{
     right: 10px;
     top: -800px;
 }
+/*Gategory*/
+.gategory{
+    margin-top: -100px;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-template-rows: auto;
+    justify-items: end
+}
+.gategory div p, .gategory div h1{
+    text-align: center;
+}
+.gategory div p{
+    font-size: 18px;
+    font-weight: 600;
+    font-family: 'Poppins';
+    opacity: 70%;
+}
+.gategory div h1{
+    font-size: 50px;
+    font-weight: 700;
+    font-family: 'Volkhov';
+}
+
+.CountinueGategory{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
+}
+.CountinueGategory .block{
+    width: 194px;
+}
+.CountinueGategory .block:not(.two, .local) img{
+    padding-bottom: 40px;
+}
+/*Переписать: сделать flex блоки прижатыми к верху для одинакового уровня рисунков*/
+.CountinueGategory .local h4{
+    padding-top: 10px;
+}
+.CountinueGategory .block p{
+    font-size: 16px;
+    font-weight: 400;
+}
+.CountinueGategory .two{
+    position: relative;
+    top: -26px;
+    display: block;
+    padding: 10px 15px;
+    border-radius: 31px;
+    background: #fff;
+    /*box-shadow:-20px -20px 20px 19px #fbfbfb;*/
+    z-index: 2;
+}
+.container .circle{
+    position: relative;
+    width: 117px;
+    height: 117px;
+    background: #dd6950;
+    border-radius: 10px;
+    right: -314px;
+    top: -70px;
+    z-index: 1;
+}
