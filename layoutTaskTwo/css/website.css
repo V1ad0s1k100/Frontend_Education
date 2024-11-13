@@ -11,7 +11,7 @@ body{
     font-family: 'Poppins';
 }
 .container{
-    margin: 55px 6%;
+    margin: 50px 6%;
 }
 footer{
     display: flex;
@@ -21,6 +21,8 @@ footer{
     justify-content: space-between;
 }
 footer nav ul{
+    position: relative;
+    z-index: 4;
     list-style-type: none;
     display: flex;
     flex-direction: row;
@@ -52,14 +54,16 @@ footer nav ul .sing:hover>a{
     background: #f0a501;
 }
 
-/*Часть с девушкой на чемодане*/
+/*Текстовая часть с девушкой на чемодане*/
 .BestDestimination{
     display: flex;
     flex-direction: row;
     padding-top: 100px;
 }
 .BestDestimination .travel{
+    position: relative;
     width: 50%;
+    z-index: 5;
 }
 .BestDestimination .travel h2{
     font-family: 'Poppins';
@@ -68,7 +72,7 @@ footer nav ul .sing:hover>a{
     color: #df6b52;
     padding-bottom: 15px;
 }
-.BestDestimination .travel h1{
+.BestDestimination .travel pre{
     display: block;
     position: relative;
     z-index: 2;
@@ -90,7 +94,7 @@ footer nav ul .sing:hover>a{
     width: 450px;
 }
 .BestDestimination .travel .block{
-    padding-top: 30px;
+    padding-top: 40px;
 }
 .BestDestimination .travel .block button{
     font-size: 18px;
@@ -120,4 +124,24 @@ footer nav ul .sing:hover>a{
     position: relative;
     right: -283px;
     top: -157px;
+}
+
+/*Девушка на чемодане*/
+.BestDestimination .women .PictureWomen{
+    position: relative;
+    z-index: 4;
+    right: 140px;
+    top: -80px;
+}
+.BestDestimination .women .Decore{
+    position: absolute;
+    z-index: 3;
+    right: 0;
+    top: 0;
+}
+.BestDestimination .women .Plane{
+    position: relative;
+    z-index: 4;
+    right: 10px;
+    top: -800px;
 }
