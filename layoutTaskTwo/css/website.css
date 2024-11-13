@@ -11,12 +11,13 @@ body{
     font-family: 'Poppins';
 }
 .container{
-    margin: 20px 5%;
+    margin: 55px 6%;
 }
 footer{
     display: flex;
     flex-direction: row;
     width: 100%;
+    align-items: flex-start;
     justify-content: space-between;
 }
 footer nav ul{
@@ -24,21 +25,99 @@ footer nav ul{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    align-items: flex-start;
+}
+footer nav ul li{
+    font-size: 17px;
+    font-weight: 400;
 }
 footer nav ul li:not(:last-child){
     margin-right: 95px;
-    align-self: center;
 }
 footer nav ul li a{
     text-decoration: none;
     color: #000;
     transition: all 500ms ease;
 }
-footer nav ul li a:not(.sing):hover{
+footer nav ul li a:not(.sing>a):hover{
     color: #f0a501;
 }
-footer nav ul li .sing{
+footer nav ul .sing a{
     border: 2px solid #000;
     border-radius: 10px;
-    padding: 10px 15px;
+    padding: 10px 28px;
+    transition: all 500ms ease;
+}
+footer nav ul .sing:hover>a{
+    background: #f0a501;
+}
+
+/*Часть с девушкой на чемодане*/
+.BestDestimination{
+    display: flex;
+    flex-direction: row;
+    padding-top: 100px;
+}
+.BestDestimination .travel{
+    width: 50%;
+}
+.BestDestimination .travel h2{
+    font-family: 'Poppins';
+    font-weight: 700;
+    font-size: 23px;
+    color: #df6b52;
+    padding-bottom: 15px;
+}
+.BestDestimination .travel h1{
+    display: block;
+    position: relative;
+    z-index: 2;
+    font-family: 'Volkhov';
+    font-size: 84px;
+    font-weight: 700;
+    line-height: 89px;
+}
+.BestDestimination .travel .line{
+    position: relative;
+    z-index: 1;
+    right: -265px;
+    top: -205px;
+}
+.BestDestimination .travel p{
+    font-weight: 400;
+    font-size: 16px;
+    opacity: 53%;
+    width: 450px;
+}
+.BestDestimination .travel .block{
+    padding-top: 30px;
+}
+.BestDestimination .travel .block button{
+    font-size: 18px;
+    font-weight: 500;
+    display: block;
+    position: relative;
+    border: 0;
+    border-radius: 10px;
+    color: #fff;
+    padding: 18px 24px;
+    background: #f0a501;
+    transition: all 500ms ease;
+    z-index: 2;
+}
+.BestDestimination .travel .block button:hover{
+    transform: scale(110%);
+}
+.BestDestimination .travel .block img{
+    position: relative;
+    right: -188px;
+    top: -69px;
+    z-index: 1;
+}
+.BestDestimination .travel .block div{
+    font-size: 17px;
+    font-weight: 400;
+    position: relative;
+    right: -283px;
+    top: -157px;
 }
