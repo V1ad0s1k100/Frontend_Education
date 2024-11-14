@@ -205,8 +205,73 @@ footer nav ul .sing:hover>a{
     width: 117px;
     height: 117px;
     background: #dd6950;
-    border-radius: 10px;
+    border-radius: 30px 0px 15px 0px;
     right: -314px;
-    top: -70px;
+    top: -104px;
     z-index: 1;
+}
+
+/*Top Selling*/
+.TopSelling{
+    padding-top: 50px;
+    text-align: center;
+}
+.TopSelling p{
+    font-weight: 600;
+    font-size: 18px;
+    opacity: 70%;
+}
+.TopSelling h1{
+    font-family: 'Volkhov';
+    font-weight: 700;
+    font-size: 50px;
+}
+/*PictureSity*/
+.PictureSity{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 60px;
+}
+.PictureSity .block{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/*Дописать слои картинки и текста*/
+.PictureSity .block .Sity{
+    display: block;
+    position: relative;
+    z-index: 1;
+}
+.PictureSity .block .TextBlock{
+    width: 60%;
+    display: grid;
+    position: relative;
+    top: -195px;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    row-gap: 10px;
+    border-radius: 0px 0px 20px 20px;
+    padding: 37px 16px;
+    box-shadow: 0px 20px 20px 0px #e7e7e7;
+    z-index: 2;
+}
+.PictureSity .block .TextBlock .Dollar{
+    text-align: end;
+}
+.PictureSity .block .TextBlock .Days{
+    display: block;
+    position: relative;
+    right: 110px;
+}
+.PictureSity .block .TextBlock span:not(.Days){
+    font-weight: 400;
+    font-size: 18px;
+    opacity: 70%;
+}
+.PictureSity .block .TextBlock .Days{
+    font-weight: 400;
+    font-size: 16px;
+    opacity: 70%;   
 }
