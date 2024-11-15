@@ -54,6 +54,21 @@ footer nav ul .sing:hover>a{
     background: #f0a501;
 }
 
+
+/*Допилить раскрывающийся список*/
+footer nav ul .EN ul{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: -105px;
+    top: 30px;
+}
+footer nav ul .EN ul li{
+    padding-right: -10px;
+}
+
+
+
 /*Текстовая часть с девушкой на чемодане*/
 .BestDestimination{
     display: flex;
