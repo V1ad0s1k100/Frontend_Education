@@ -20,6 +20,10 @@ footer{
     align-items: flex-start;
     justify-content: space-between;
 }
+footer img{
+    position: relative;
+    top: -9px;
+}
 footer nav ul{
     position: relative;
     z-index: 4;
@@ -33,7 +37,7 @@ footer nav ul li{
     font-size: 17px;
     font-weight: 400;
 }
-footer nav ul li:not(:last-child){
+footer nav ul .effect, footer nav ul .sing{
     margin-right: 95px;
 }
 footer nav ul li a{
@@ -41,7 +45,7 @@ footer nav ul li a{
     color: #000;
     transition: all 500ms ease;
 }
-footer nav ul li a:not(.sing>a):hover{
+footer nav ul .effect:hover{
     color: #f0a501;
 }
 footer nav ul .sing a{
@@ -53,21 +57,32 @@ footer nav ul .sing a{
 footer nav ul .sing:hover>a{
     background: #f0a501;
 }
-
-
-/*Допилить раскрывающийся список*/
+/*Раскрывающийся список EN*/
+footer nav ul .EN ul li{
+    margin-top: 4px;
+    padding: 8px 10px 8px 10px;
+    transition: all .2s ease;
+    border-radius: 10px;
+}
 footer nav ul .EN ul{
+    position: absolute;
+    top: 25px;
+    right: -45px;
     display: flex;
     flex-direction: column;
-    position: absolute;
-    right: -105px;
-    top: 30px;
 }
-footer nav ul .EN ul li{
-    padding-right: -10px;
+footer nav ul .EN > ul{
+    display: none;
 }
-
-
+footer nav ul .EN:hover> ul{
+    display: initial;
+}
+footer nav ul .EN ul li:hover{
+    background: #f0a501;
+}
+footer nav ul .EN:hover>a{
+    color: #f0a501;
+}
 
 /*Текстовая часть с девушкой на чемодане*/
 .BestDestimination{
