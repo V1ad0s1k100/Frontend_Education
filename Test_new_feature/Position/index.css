@@ -1,0 +1,99 @@
+.block {
+    width: 600px;
+    height: 100px;
+    margin: 10px;
+    border: 5px solid rgb(0 0 0);
+    display: flex;
+}
+.BlockColorObjects {
+    position: relative;
+}
+.red {
+    background-color: red;
+    position: sticky;
+    top: 10px;
+    left: 650px;
+}
+.blue {
+    background-color: blue;
+    position: absolute;
+}
+.green {
+    background-color: green;
+}
+.yellow {
+    background-color: yellow;
+}
+.purple {
+    background-color: purple;
+    text-align: center;
+    font-size: 30px;
+    position: relative;
+}
+.purple span{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+p{
+    font-size: 25px;
+    padding-inline: 200px;
+}
+.ModalWindow {
+    width: 500px;
+    height: 300px;
+    background-color: antiquewhite;
+    border: 5px solid rgb(0 0 0);
+    position: fixed;
+    top: 30%;
+    left: 30%;
+}
+.ModalWindow h1 {
+    text-align: center;
+    align-items: center;
+    margin-top: 130px;
+}
+.SizeBlockForChild {
+    position: relative;
+    text-align: center;
+    font-size: 30px;
+    border: 5px solid rgb(0 0 0);
+    background-color: antiquewhite;
+    width: 400px;
+    height: 400px;
+}
+.Child {
+    position: absolute;
+
+    background-color: chocolate;
+    inset: 10px;
+}
+.BlocksForZ-index {
+    position: relative;
+    z-index: 100;
+    margin-block: 50px;
+    text-align: center;
+    text-align: center;
+    font-size: 30px;
+    border: 5px solid rgb(0 0 0);
+    background-color: antiquewhite;
+    width: 400px;
+    height: 400px;
+    color: white;
+}
+.OneBlock {
+    background-color: brown;
+    width: 200px;
+    height: 100px;
+    align-content: center;
+}
+.TwoBlock {
+    position: relative;
+    top: -50px;
+    left: 30px;
+    background-color: rgb(112, 165, 42);
+    width: 200px;
+    height: 100px;
+    align-content: center;
+    z-index: 99;
+}
