@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
 }
-*:not(a){
+*{
     -webkit-user-select: none;
 }
 body{
@@ -257,51 +257,33 @@ footer nav ul .EN:hover>a{
     font-size: 50px;
 }
 /*PictureSity*/
+/*box-shadow: 0px 20px 20px 0px #e7e7e7;*/
 .PictureSity{
+    position: relative;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding-top: 60px;
+    margin-top: 50px;
 }
-.PictureSity .block{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-/*Дописать слои картинки и текста*/
-.PictureSity .block .Sity{
-    display: block;
-    position: relative;
-    z-index: 1;
-}
-.PictureSity .block .TextBlock{
-    width: 60%;
+.PictureSity .block .TextBlock {
     display: grid;
-    position: relative;
-    top: -195px;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 50% 50%;
-    row-gap: 10px;
-    border-radius: 0px 0px 20px 20px;
-    padding: 37px 16px;
-    box-shadow: 0px 20px 20px 0px #e7e7e7;
-    z-index: 2;
+    grid-template-columns: ;
 }
-.PictureSity .block .TextBlock .Dollar{
-    text-align: end;
-}
-.PictureSity .block .TextBlock .Days{
+.PictureSity .block1 .TextBlock div::after {
+    content: '10 Days Trip';
     display: block;
-    position: relative;
-    right: 110px;
+    font-size: 14px; /* Настройте размер шрифта по необходимости */
+    color: #000; /* Настройте цвет текста по необходимости */
 }
-.PictureSity .block .TextBlock span:not(.Days){
-    font-weight: 400;
-    font-size: 18px;
-    opacity: 70%;
+.PictureSity .block2 .TextBlock div::after {
+    content: '12 Days Trip';
+    display: block;
+    font-size: 14px; /* Настройте размер шрифта по необходимости */
+    color: #000; /* Настройте цвет текста по необходимости */
 }
-.PictureSity .block .TextBlock .Days{
-    font-weight: 400;
-    font-size: 16px;
-    opacity: 70%;   
+.PictureSity .block3 .TextBlock div::after {
+    content: '28 Days Trip';
+    display: block;
+    font-size: 14px; /* Настройте размер шрифта по необходимости */
+    color: #000; /* Настройте цвет текста по необходимости */
 }
