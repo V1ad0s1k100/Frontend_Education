@@ -8,11 +8,10 @@
     width: 90vw;
     margin: 5vh 5vw;
     display: flex;
-    flex-direction: row;
+    flex-flow: row wrap;
     justify-content: center;
     align-items: center;
     gap: 1vw 1vh;
-    flex-wrap: wrap;
 }
 .box {
     width: 200px;
@@ -24,19 +23,22 @@
     justify-content: center;
     align-items: center;
     font-weight: 500;
-
 }
 .red {
     background-color: red;
+    flex-basis: 200px; /*Устанавливает изначальную ширину вне зависимости от width и height*/
+    order: 10; /*Устанавливает порядок элемента внутри контейнера*/
 }
 .blue {
-    background-color: green;
+    background-color: blue;
+    flex: 1 0 200px; /* flex-grow: 1; flex-shrink: 0; flex-basis: 200px; */
 }
 .green {
-    background-color: blue;
+    background-color: green;
 }
 .yellow {
     background-color: yellow;
+    order: 9;
 }
 .purple {
     background-color: purple;
