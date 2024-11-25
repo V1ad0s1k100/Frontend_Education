@@ -1,12 +1,12 @@
-**Карта** --> https://miro.com/app/board/uXjVNGw7Jv8=/?share_link_id=860861096273
+<a href='https://miro.com/app/board/uXjVNGw7Jv8=/?share_link_id=860861096273' target="_blank">**Карта**</a>
 
-**Учебник по JS** --> https://learn.javascript.ru/
+<a href='https://learn.javascript.ru/' target="_blank">**Учебник по JS**</a>
 
-**Учебник по HTML и CSS** —> https://metanit.com/web/html5/
+<a href='https://metanit.com/web/html5/' target="_blank">**Учебник по HTML и CSS**</a>
 
-**Основные команды в Git** --> https://img2.teletype.in/files/12/b2/12b2643b-14bf-447e-9e46-585a00374999.jpeg
+<a href='https://img2.teletype.in/files/12/b2/12b2643b-14bf-447e-9e46-585a00374999.jpeg' target="_blank">**Основные команды в Git**</a>
 
-**Mozilla (онлайн-хранилище документации для стандартов веб-разработки)** --> https://developer.mozilla.org/ru/docs/Learn/CSS
+<a href='https://developer.mozilla.org/ru/docs/Learn/CSS' target="_blank">**Mozilla (онлайн-хранилище документации для стандартов веб-разработки)**</a>
 
 ---
 
