@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <main>
+        <div class="block block1">
+            Псевдокласс First-child выбирает первый параграф, a Last-child выбирает последний параграф
+            <p>Параграф 1</p>
+            <p>Параграф 2</p>
+            <p>Параграф 3</p>
+            <p>Параграф 4</p>
+            <p>Параграф 5</p>
+            <p>Параграф 6</p>
+            <p>Параграф 7</p>
+            <p>Параграф 8</p>
+        </div>
+        <div class="block block2">
+            Псевдокласс nth-child(odd) выбирает все нечетные параграфы, a nth-child(even) выбирает все четные параграфы. nth-child(3) выбирает третий параграф. nth-last-child(3) выбирает третий параграф с конца.
+            <p>Параграф 1</p>
+            <p>Параграф 2</p>
+            <p>Параграф 3</p>
+            <p>Параграф 4</p>
+            <p>Параграф 5</p>
+            <p>Параграф 6</p>
+            <p>Параграф 7</p>
+            <p>Параграф 8</p>
+        </div>
+        <div class="block block3">
+            Псевдокласс nth-child(3n) выбирает каждый третий параграф, a nth-child(3n+1) выбирает каждый третий параграф, начиная с первого. nth-child(3n+2) выбирает каждый третий параграф, начиная со второго.
+            <p>Параграф 1</p>
+            <p>Параграф 2</p>
+            <p>Параграф 3</p>
+            <p>Параграф 4</p>
+            <p>Параграф 5</p>
+            <p>Параграф 6</p>
+            <p>Параграф 7</p>
+            <p>Параграф 8</p>
+        </div>
+        <div class="block block4">
+            Псевдокласс only-child выбирает единственную строчку внутри блоков ul.
+            <ul>
+                <li>Первый элемент списка</li>     
+                <li>Второй элемент списка</li>
+            </ul>
+            <ul>
+                <li>Единственный элемент списка</li>
+            </ul>       
+        </div>
+        <div class="block block5">
+            Псевдокласс not(:Last-child) выбирает все параграфы, кроме последнего.
+            <p>Параграф 1</p>
+            <p>Параграф 2</p>
+            <p>Параграф 3</p>
+            <p>Параграф 4</p>
+        </div>
+        <div class="block block6">
+            <button class="hover-effect" >hover состояние</button>
+            <button class="focus-effect">focus состояние</button>
+            <button class="focus-visible-effect">focus visible состояние</button>
+            <button class="active-effect">active состояние</button>
+        </div>
+    </main>
+</body>
+</html>

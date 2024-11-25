@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main {
+    height: 95vh;
+    margin: 0 auto;
+    margin-block: 2.5vh;
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding-inline: 20vw;
+}
+main .block {
+    margin-bottom: 20px;
+}
+main .block {
+    text-align: center;
+}
+main .block p,li {
+    text-align: start;
+}
+main .block p:first-child {
+    margin-top: 15px;
+}
+main .block1 p:first-child {
+    color: red;
+}
+main .block1 p:last-child {
+    color: blue;
+}
+main .block2 p:nth-child(odd) {
+    color:red;
+}
+main .block2 p:nth-child(even) {
+    color:blue;
+}
+main .block2 p:nth-child(3) {
+    color: greenyellow;
+}
+main .block2 p:nth-last-child(3) {
+    color:indigo;
+}
+main .block3 p:nth-child(3n) {
+    color: red;
+}
+main .block3 p:nth-child(3n+2) {
+    color: blue;
+}
+main .block4 ul:first-child {
+    margin-bottom: 20px;
+}
+main .block4 li:only-child {
+    color: red;
+}
+main .block5 p {
+    color: red;
+}
+main .block5 p:not(:last-child) {
+    color: blue;
+}
+/*Эффекты при нажатии или наведении на кнопку*/
+.block6 .hover-effect, .focus-effect, .focus-visible-effect {
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    color: #000;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+.block6 .active-effect {
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    color: #000;
+    cursor: pointer;
+}
+.hover-effect:hover {
+    background-color:bisque;
+    box-shadow: 6px -3px 7px 0px #0000005c;
+}
+.hover-effect:active {
+    background-color: #ff8a00;
+}
+/*Срабатывает при фокусировке с клавиатуры Ctrl + левый Shift. При нажатии мышью происходит залипание фокусировки*/
+.focus-effect:focus {
+    background-color: bisque;
+    box-shadow: 6px -3px 7px 0px #0000005c;
+}
+/*Срабатывает только при фокусировке с клавиатуры*/
+.focus-visible-effect:focus-visible {
+    background-color: bisque;
+    box-shadow: 6px -3px 7px 0px #0000005c;
+}
+/*Срабатывает в момент клика на кнопку*/
+.active-effect:active {
+    background-color: yellowgreen;
+}
