@@ -1,0 +1,94 @@
+/* Селектор по тегу */
+p {
+    color: blue;
+}
+
+/* Селектор по классу */
+.example {
+    font-weight: bold;
+}
+
+/* Селектор по id */
+#unique {
+    text-decoration: underline;
+}
+
+/* Селектор по классу внутри другого класса */
+.container .nested .example {
+    color: red;
+}
+
+/* Селектор по тегу внутри класса */
+.container ul li {
+    list-style-type: square;
+}
+
+/* Селектор по атрибуту */
+a[href] {
+    color: green;
+}
+
+/* Селектор по атрибуту с конкретным значением */
+a[href="#"] {
+    color: orange;
+}
+
+/* Псевдокласс :first-child */
+p:first-child {
+    margin-top: 0;
+}
+
+/* Псевдокласс :last-child */
+p:last-child {
+    margin-bottom: 0;
+}
+
+/* Псевдокласс :nth-child */
+p:nth-child(2) {
+    background-color: lightgray;
+}
+
+/* Псевдокласс :hover */
+a:hover {
+    text-decoration: none;
+}
+
+/* Псевдокласс :disabled */
+input:disabled {
+    background-color: #ccc;
+}
+
+/* Комбинирование селекторов по классу и тегу */
+div.parent {
+    border: 1px solid black;
+}
+
+/* Комбинирование селекторов по классу и псевдоклассу */
+div.parent:hover {
+    background-color: lightblue;
+}
+
+/* Селектор потомков */
+div.parent .child {
+    padding: 10px;
+}
+
+/* Селектор соседей */
+div.sibling + p {
+    color: purple;
+}
+
+/* Селектор соседей с классом */
+div.sibling + p.adjacent {
+    font-style: italic;
+}
+
+/* Групповой селектор */
+div.group p {
+    margin: 5px 0;
+}
+
+/* Групповой селектор с псевдоклассом */
+div.group p:nth-child(2) {
+    background-color: yellow;
+}
