@@ -10,5 +10,11 @@
 
 ---
 
+**Сайты-пособия**
+
+<a href='https://nth-child.belter.io/' target='_blank'>**nth-child сайт-пособие по псевдоклассу**</a>
+
+---
+
 **Интересные функции HTML и CSS**:
   - -webkit-user-select: none <-- не дает пользователю выделять текст
