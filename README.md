@@ -10,15 +10,15 @@
 
 <a href='https://developer.mozilla.org/ru/docs/Learn/CSS' target="_blank">**Mozilla (онлайн-хранилище документации для стандартов веб-разработки)**</a>
 
-<a href='https://htmlacademy.ru/blog/css/short-12'>**Как прятать**</a>
-
 ---
 
 **Сайты-пособия**
 
 <a href='https://nth-child.belter.io/' target='_blank'>**nth-child сайт-пособие по псевдоклассу**</a>
 
+<a href='https://htmlacademy.ru/blog/css/short-12'>**Как прятать в CSS**</a>
+
 ---
 
 **Интересные функции HTML и CSS**:
-  - -webkit-user-select: none <-- не дает пользователю выделять текст
+  - -webkit-user-select: none <-- Текст элемента и его подэлементов не может быть выделен
