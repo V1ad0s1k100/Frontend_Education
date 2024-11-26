@@ -10,6 +10,8 @@
 
 <a href='https://developer.mozilla.org/ru/docs/Learn/CSS' target="_blank">**Mozilla (онлайн-хранилище документации для стандартов веб-разработки)**</a>
 
+<a href='https://htmlacademy.ru/blog/css/short-12'>**Как прятать**</a>
+
 ---
 
 **Сайты-пособия**
