@@ -60,7 +60,7 @@ main .block5 p:not(:last-child) {
     color: blue;
 }
 /*Эффекты при нажатии или наведении на кнопку*/
-.block6 .hover-effect, .focus-effect, .focus-visible-effect {
+.block6 .hover-effect, .focus-effect, .focus-visible-effect, .disabled-effect {
     padding: 10px 20px;
     font-size: 1.5rem;
     font-weight: 500;
@@ -101,4 +101,50 @@ main .block5 p:not(:last-child) {
 /*Срабатывает в момент клика на кнопку*/
 .active-effect:active {
     background-color: yellowgreen;
+}
+/*Выключает кнопку*/
+.disabled-effect:disabled { 
+}
+/*Применяет стили к элементам формы (обычно <input type="checkbox"> или <input type="radio">), когда они находятся в отмеченном (выбранном) состоянии.*/
+.checkbox-1:checked {
+    box-shadow: 2px -2px 19px black;
+}
+
+
+
+.visually-hidden {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  margin: -1px !important;
+  border: 0 !important;
+  padding: 0 !important;
+  white-space: nowrap !important;
+  clip-path: inset(100%) !important;
+  clip: rect(0 0 0 0) !important;
+  overflow: hidden !important;
+}
+.checkbox {
+    display: flex;
+    column-gap: 15px;
+    user-select: none;
+}
+.checkbox-control:not(:checked) + .checkbox-emulator::after {
+    display: none;
+}
+.checkbox-emulator {
+    display: inline-flex;
+    align-items: center;
+    justify-self: center;
+    width: 2rem;
+    height: 2rem;
+    border: 3px solid #00d5b9;
+    background-color: #00ffdd;
+    border-radius: 5px;
+}
+.checkbox-emulator::after {
+    content: '✔';
+    position: relative;
+    color: green;
+    left: 3px;
 }
