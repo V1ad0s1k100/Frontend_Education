@@ -10,15 +10,8 @@
 
 <a href='https://developer.mozilla.org/ru/docs/Learn/CSS' target="_blank">**Mozilla (онлайн-хранилище документации по стандартам веб-разработки)**</a>
 
-<a href='https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design' target="_blank">**Адаптивная верстка mozila**</a>
 
-<a href='https://www.w3schools.com/css/css_rwd_mediaqueries.asp' target="_blank">**Адаптивная верстка w3schools**</a>
-
-----
-
-**Сайты-пособия**
-
-<a href='https://nth-child.belter.io/' target='_blank'>**nth-child сайт-пособие по псевдоклассу**</a>
+<h1>Сайты-пособия</h1>
 
 <a href="https://flexboxfroggy.com/#ru" target='_blank'>**Тренажер по Flexbox Layout**</a>
 
@@ -26,7 +19,13 @@
 
 <a href='https://htmlacademy.ru/blog/css/short-12' target="_blank">**Как прятать в CSS**</a>
 
----
+<a href='https://www.w3schools.com/css/css_rwd_mediaqueries.asp' target="_blank">**Адаптивная верстка w3schools**</a>
 
-**Интересные функции HTML и CSS**:
+<a href='https://nth-child.belter.io/' target='_blank'>**nth-child сайт-пособие по псевдоклассу**</a>
+
+<a href='https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design' target="_blank">**Адаптивная верстка mozila**</a>
+
+
+<h1>Интересные функции HTML и CSS</h1>
+
   - -webkit-user-select: none <-- Текст элемента и его подэлементов не может быть выделен
