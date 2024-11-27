@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    font-size: 20px;
+    font-weight: 500;
+}
+h1 {
+    margin-block: 50px;
+}
+.block:not(.block5, .block6, .block7, .block8, .block9, .block10) {
+    height: 200px;
+    margin: 10px;
+    background-color: #7cad7a;
+    width: 50vw;
+}
+.block5, .block6, .block7, .block8, .block9, .block10 {
+    height: 200px;
+    margin: 10px;
+    width: 50vw;
+}
+.grid-element {
+    background-color: #7f8195;
+}
+.block1 {
+    display: grid;
+    /*grid-template-columns <-- создает столбцы grid контейнера*/
+    /*grid-template-columns: [first] auto [second] auto*/
+    grid-template-columns: repeat(2, auto) repeat(2, 100px);/*repeat можно использовать несколько раз, в таком случае будет созданно несколько столбцов разной ширины*/
+    /*repeat(2, 1fr) <-- 1fr - это часть от общей ширины*/
+}
+.block2 {
+    display: grid;
+    grid-template-columns: minmax(100px, 1fr) 1fr 1fr;/*minmax(100px, 1fr) - минимальная ширина 100px, максимальная 1fr, в зависимости от ширины экрана*/
+    /*grid-template-rows <-- создает строки grid контейнера*/
+    grid-template-rows: 30px 30px;
+}
+.block3 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px 50px;
+    /*grid-auto-rows <-- задает ширину строк, которые не входят в grid-template-rows. Два значения чередуются*/
+    grid-auto-rows: 25px 50px;
+}
+.block4 {
+    display: grid;
+    grid-template-columns: 100px;
+    grid-auto-columns: 50px 100px;/*grid-auto-columns <-- задает ширину столбцов, которые не входят в grid-template-columns*/
+    grid-auto-flow: column;/*похожее значение flex-wrap: wrap*/
+}
+.block5 {
+    display: grid;
+    /* grid-template-areas <-- задает области сетки и их расположение */
+    grid-template-areas: 
+    "header header"
+    "content1 content2"
+    "footer footer";
+    /* row-gap <-- задает расстояние между строчками сетки */
+    row-gap: 20px;
+    /* column-gap <-- задает расстояние между столбцами сетки */
+    column-gap: 30px;
+    /* grid-gap: X Y <-- объединение row-gap и column-gap. X отвечает за растояние между строчками, Y за растояние между столбцами*/
+    width: 50vw;
+    height: 200px;
+    margin: 10px;
+}
+.block5 .grid-element-position-1 {
+    /*Свойство 'grid-area' назначает элементу именованную область сетки.
+     * В данном случае оно помещает элемент в область 'header' сетки.
+    */
+    grid-area: header;
+    background-color: blue;
+}
+.block5 .grid-element-position-2 {
+    grid-area: content1;
+    background-color: blueviolet;
+}
+.block5 .grid-element-position-3 {
+    grid-area: content2;
+    background-color: brown;
+}
+.block5 .grid-element-position-4 {
+    grid-area: footer;
+    background-color: chartreuse;
+}
+.block6 {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(2, 100px);
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+    color: #fff;
+}
+.block7 {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(2, 100px);
+    place-items: center end; /*place-items: center end; - выравнивание по центру по вертикали и по правому краю по горизонтали. Совмещение justify-content и align-items. Если значения совпадают можно сократить до place-items: center*/
+    gap: 20px;
+    text-align: center;
+    color: #fff;
+}
+.block8 {
+    display: grid;
+    grid-template-columns: [first-column]100px [second-column]100px;
+    grid-template-rows: [first-row]100px [second-row]100px;
+    gap: 20px;
+    text-align: center;
+    color: #fff;
+}
+.block8 .big {
+    color:blue;
+    /*grid-column-start: 1; - начало элемента по горизонтали
+    *grid-column-start: 2;
+    *grid-column-end: 4; - конец элемента по горизонтали
+    *grid-column-end: 4;
+    *grid-row-start: 1; - начало элемента по вертикали
+    *grid-row-start: 1;
+    *grid-row-end: 4; - конец элемента по вертикали
+    grid-row-end: 4;*/
+    /* 
+        Свойство `grid-column` указывает столбец(ы), которые элемент будет занимать в сетке.
+        В данном случае элемент занимает пространство от начала 2-го столбца до начала 3-го столбца.
+
+        Свойство `grid-row` указывает строку(и), которые элемент будет занимать в сетке.
+        В данном случае элемент занимает пространство от начала 1-й строки до начала 3-й строки.
+    */
+    /*
+    grid-column: 2/3;
+    grid-row: 1/3;
+    */
+    grid-column: second-column/3;
+    grid-row: first-row/4;
+    padding-bottom: 50%;
+} 
+h1:nth-child(17) {
+    margin-top: 140px;
+}
+.block9 {
+    display: grid;
+    grid-template-columns: repeat(2, 100px);
+    grid-template-rows: repeat(2, 100px);
+    gap: 20px;
+    text-align: center;
+    color: #fff;
+}
+.block9 .big {
+    color: blue;
+    /* Свойство grid-column: span 1 указывает, что элемент должен занимать одну колонку сетки. Также и для grid-row*/
+    grid-column: span 1;
+    grid-row: 2/4;
+}
+.block9 .green-content {
+    /* 
+        Свойство grid-column: -1/1 задает элементу позиционирование по колонкам сетки.
+        Значение -1/1 означает, что элемент будет начинаться с последней колонки и заканчиваться первой.
+        Это может быть полезно для создания сложных макетов, где элементы должны перекрывать несколько колонок.
+    */
+    grid-column: -1/1;
+    order: -1; /*Свойство order задает порядок элемента в сетке. Элементы с меньшим значением order будут отображаться раньше.*/
+}
