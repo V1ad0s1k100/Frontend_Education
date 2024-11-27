@@ -14,11 +14,15 @@
 
 <a href='https://www.w3schools.com/css/css_rwd_mediaqueries.asp' target="_blank">**Адаптивная верстка w3schools**</a>
 
----
+----
 
 **Сайты-пособия**
 
 <a href='https://nth-child.belter.io/' target='_blank'>**nth-child сайт-пособие по псевдоклассу**</a>
+
+<a href="https://flexboxfroggy.com/#ru" target='_blank'>**Тренажер по Flexbox Layout**</a>
+
+<a href="https://cssgridgarden.com/#ru" target='_blank'>**Тренажер по Grid Layout**</a>
 
 <a href='https://htmlacademy.ru/blog/css/short-12' target="_blank">**Как прятать в CSS**</a>
 
