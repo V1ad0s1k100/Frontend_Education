@@ -25,6 +25,7 @@
 
 <a href='https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design' target="_blank">**Адаптивная верстка mozila**</a>
 
+<a href='https://bennettfeely.com/clippy/' target='_blank'>**clip-path сайт по обрезке фигур**</a>
 
 <h1>Интересные функции HTML и CSS</h1>
 
