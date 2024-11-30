@@ -1,3 +1,9 @@
+<h1>Подключения</h1>
+
+<p>Нормализация стилей</p>
+
+- ``` <link rel="stylesheet" href="/JavaScript_Education/normalize.css"> ```
+
 <H1>Учебный материал</H1>
 
 <a href='https://miro.com/app/board/uXjVNGw7Jv8=/?share_link_id=860861096273' target="_blank">**Карта**</a>
