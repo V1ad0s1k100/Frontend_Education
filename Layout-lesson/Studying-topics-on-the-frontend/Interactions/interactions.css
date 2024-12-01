@@ -1,0 +1,121 @@
+body {
+    padding: 10px;
+}
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(145, 145, 241);
+}
+.box-with-cursor {
+    display: grid;
+    grid-template: repeat(4, 200px) / repeat(5, 200px);
+    gap: 10px;
+    margin-top: 50px;
+}
+.box-with-cursor div {
+    background-color: rgb(145, 145, 241);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: aliceblue;
+}
+.userSelect {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+
+}
+.userSelect div {
+    width: 200px;
+    height: 200px;
+    background-color: rgb(145, 145, 241);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: aliceblue;
+}
+.user1 {
+    /* Свойство user-select управляет тем, может ли пользователь выделять текст.
+    Значение auto позволяет браузеру определять поведение выделения текста в зависимости от контекста и других стилей. */
+    
+    user-select: auto;
+}
+.user2 {
+    user-select: none;
+}
+.pointerEvents {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+}
+.pointerEvents button {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+/* Pointer-events используется для управления тем, как элемент реагирует на события указателя, такие как клики, наведение мыши и другие взаимодействия.
+
+Вот основные значения свойства pointer-events:
+
+auto: Элемент реагирует на события указателя в обычном режиме.
+none: Элемент не реагирует на события указателя. Это означает, что клики и другие события будут проходить через этот элемент к элементам, находящимся под ним.
+
+pointer-events наследуется*/
+
+.buttonBox1 {
+    pointer-events: none;
+    user-select: none;
+}
+.buttonBox2 {
+    pointer-events: auto;
+    user-select: none;
+}
+/*resize - добавляет ползунок в левом низу блока, позволяя менять размеры блока пользователю. Чаще применяется со свойством overflow, которое задает обрезку контента*/
+
+.resizeBox {
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+}
+.resizeBox div {
+    width: 200px;
+    height: 200px;
+    background-color: rgb(145, 145, 241);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: aliceblue;
+}
+.resizeBox2 {
+    resize: both;
+    overflow: auto;
+}
+.resizeBox1 {
+    resize: none;
+}
+.resizeBox3 {
+    resize: horizontal;
+    overflow: auto;
+}
+.resizeBox4 {
+    resize: vertical;
+    overflow: auto;
+}
+/*
+ Свойство scroll-behavior управляет тем, как прокручивается содержимое страницы.
+ 
+ scroll-behavior: auto; - мгновенный переход при прокрутке.
+ scroll-behavior: smooth; - плавный переход при прокрутке.
+ Задаем плавную прокрутку для всего документа.
+ */
+html {
+    scroll-behavior: smooth;
+}

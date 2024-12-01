@@ -1,0 +1,42 @@
+a {
+    text-decoration: none;
+    color: black;
+}
+ul{
+    list-style-type: none;
+    padding: 0;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90vw;
+    margin-inline: 5vw;
+    margin-top: 3vh;
+    margin-bottom: 3vw;
+}
+header nav {
+    display: flex;
+    justify-content: space-between;
+    width: 90vw;
+}
+header nav img[alt="иконка"] {
+    width: 100px;
+    height: 100px;
+}
+header nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-shrink: 0;
+    width: 70%;
+    column-gap: 2vw;
+}
+.menu-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4vw
+}
