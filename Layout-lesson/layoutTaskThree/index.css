@@ -1,3 +1,11 @@
+:root {
+    --font-text-main: 20px;
+    --margin-main: 20px;
+}
+body {
+    background-repeat: no-repeat;
+    background-image: linear-gradient(360deg, rgba(0,0,0,1) 0%, rgba(250,159,75,0.7932422969187676) 100%);
+}
 a {
     text-decoration: none;
     color: black;
@@ -16,14 +24,18 @@ ul{
     margin-top: 3vh;
     margin-bottom: 3vw;
 }
+
+/*Header*/
+
 header nav {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     width: 90vw;
 }
 header nav img[alt="иконка"] {
-    width: 100px;
-    height: 100px;
+    width: 5.2vw;
+    height: 5.2vw;
 }
 header nav ul {
     display: flex;
@@ -38,5 +50,24 @@ header nav ul {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: 1.4vw
+    font-size: 1.4vw;
+}
+.menu-item a {
+    opacity: 0.5;
+    transition: all 0.5s ease;
+}
+.menu-item a:hover {
+    opacity: 1;
+}
+
+/*Main*/
+
+main {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80vw;
+    font-size: var(--font-text-main);
+    margin-top: var(--margin-main);
 }

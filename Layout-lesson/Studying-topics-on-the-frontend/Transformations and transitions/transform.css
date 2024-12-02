@@ -1,0 +1,166 @@
+h1 {
+    text-align: center;
+}
+body {
+    font-size: 30px;
+}
+main {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+.block {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    border: 5px solid red;
+    border-radius: 10px;
+}
+.translate1 {
+
+    /*Свойство transform в CSS используется для применения двумерных и трехмерных преобразований к элементу. Одним из значений этого свойства является translate, которое позволяет перемещать элемент по оси X и/или Y.*/
+
+    transform: translateX(100px);
+    background-color: greenyellow;
+    opacity: 0.7;
+}
+.translate2 {
+    transform: translateY(-100px);
+    background-color: lightsalmon;
+    opacity: 0.7;
+}
+.translate3 {
+    transform: translate(100px, -100px);
+    background-color: cadetblue;
+    opacity: 0.7;
+}
+.scale1 {
+    /*Значение scale изменяет размер элемента по оси X и/или Y. Оно принимает один или два числовых параметра. Внутри прописывается коэффициент увеличения или уменьшения размера элемента. Может принимать отрицательные значения.
+    */
+    transform: scaleX(1.5);
+    background-color: greenyellow;
+    opacity: 0.7;
+}
+.scale2 {
+    transform: scaleY(-1.5);
+    background-color: lightsalmon;
+    opacity: 0.7;
+}
+.scale3 {
+    transform: scale(1.5);
+    background-color: cadetblue;
+    opacity: 0.7;
+}
+.rotate1 {
+    /*Значение rotate вращает элемент на заданный угол. Оно принимает один параметр — угол в градусах. Положительные значения вращают элемент по часовой стрелке, отрицательные — против часовой стрелки.*/
+    transform: rotate(45deg);
+    background-color: greenyellow;
+    opacity: 0.7;
+}
+.rotate2 {
+    transform: rotate(-45deg);
+    background-color: lightsalmon;
+    opacity: 0.7;
+}
+.rotate3 {
+    transform: rotate(180deg);
+    background-color: cadetblue;
+    opacity: 0.7;
+}
+.skew1 {
+    /*Значение skew наклоняет элемент на заданный угол по горизонтали и/или вертикали. Оно принимает один или два параметра — угол наклона по горизонтали и вертикали в градусах.*/
+    transform: skewX(45deg);
+    background-color: greenyellow;
+    opacity: 0.7;
+}
+.skew2 {
+    transform: skewY(-45deg);
+    background-color: lightsalmon;
+    opacity: 0.7;
+}
+.skew3 {
+    transform: skew(45deg, -45deg);
+    background-color: cadetblue;
+    opacity: 0.7;
+}
+/*Можно использовать свойства отдельно:
+    translate: X Y;
+    scale: X Y;
+    rotate: X;
+    Также можно использовать несколько свойств одновременно в transform: translate(100px, 100px) scale(1.5) rotate(45deg) skew(45deg, 45deg);
+*/
+.transform-origin {
+    /*Свойство transform-origin устанавливает точку, относительно которой применяются преобразования. По умолчанию это центр элемента. Значение свойства может быть задано в процентах, пикселях или ключевых словах. Первое значение задает горизонтальную координату, второе — вертикальную.*/
+    transform: rotate(45deg);
+    transform-origin: 0 0;
+    background-color: greenyellow;
+    opacity: 0.7;
+    margin: 0;
+}
+.content {
+    border: 5px solid green;
+    border-radius: 10px;
+}
+.transition1:hover {
+    /*Свойство transition позволяет задать плавное изменение стилей элемента при изменении его состояния. Оно принимает четыре параметра: свойство, которое будет изменяться, время, за которое изменение будет происходить, функцию изменения и задержку перед началом изменения.*/
+    transition: all 0.9s ease;
+    scale: 1.5;
+}
+.transition2:hover {
+    transition: all 3s ease;
+    rotate: 90deg;
+}
+.transition3:hover {
+    transition: all 3s ease 0.1s;
+    translate: 100px 0
+}
+/*
+
+transition-property: all; Свойство, к которому будет применяться переход. 'all' означает, что переход будет применяться ко всем изменяемым свойствам.
+
+transition-duration: 0.5s; Длительность перехода. В данном случае переход будет длиться 0.5 секунды.
+
+transition-timing-function: ease; Функция временного распределения перехода. 'ease' означает, что переход будет происходить сначала медленно, затем быстрее, а в конце снова медленно. 
+
+transition-delay: 0s; Задержка перед началом перехода. В данном случае задержка отсутствует, и переход начнется сразу.
+
+*/
+
+.inner {
+    height: 200px;
+    width: 200px;
+    background-color: greenyellow;
+    opacity: 0.7;
+    transition: all 2s ease;
+    margin: 10px;
+    border: 5px solid green;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+}
+
+/*Свойство transition-timing-function в CSS определяет, как будет изменяться скорость анимации в течение времени. Оно позволяет задать кривую ускорения для анимации, что влияет на то, как плавно или резко будет происходить переход.*/
+
+section .box1 {
+    transition-timing-function: ease; /* Плавное начало и конец анимации, с ускорением в середине */
+}
+section .box2 {
+    transition-timing-function: ease-in; /* Медленное начало анимации, затем ускорение */
+}
+section .box3 {
+    transition-timing-function: ease-out; /* Быстрое начало анимации, затем замедление */
+}
+section .box4 {
+    transition-timing-function: ease-in-out; /* Медленное начало и конец анимации, с ускорением в середине */
+}
+section .box5 {
+    transition-timing-function: linear; /* Равномерная скорость анимации от начала до конца */
+}
+section .box6 {
+    transition-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1); /* Пользовательская кривая Безье для более точного контроля над анимацией */
+}
+section:hover .inner {
+    width: 95vw;
+}
