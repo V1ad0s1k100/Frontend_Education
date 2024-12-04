@@ -14,6 +14,11 @@
 
 <a href='https://developer.mozilla.org/ru/docs/Learn/CSS' target="_blank">**Mozilla (онлайн-хранилище документации по стандартам веб-разработки)**</a>
 
+<a href='https://caniuse.com/' target="_blank">**Can i use (инструмент для проверки совместимости веб-технологий с разными версиями браузеров)**</a>
+
+<a href='https://autoprefixer.github.io/ru/' target='_blank'>**Автопрефиксер (плагин для PostCSS для добавления вендорных префиксов в CSS)**</a>
+
+<a href='https://transfonter.org/' target='_blank'>**Transfonter (онлайн-генератор CSS, который позволяет конвертировать шрифты в форматы TTF, OTF, WOFF, WOFF2 или SVG)**</a>
 
 <h1>Сайты-пособия</h1>
 
