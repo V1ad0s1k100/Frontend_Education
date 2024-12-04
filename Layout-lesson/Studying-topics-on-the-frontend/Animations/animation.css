@@ -1,0 +1,105 @@
+@keyframes example {
+    10% {
+        translate: 10vw 35%;
+        border-radius: 0 50% 50% 50%;
+        box-shadow: -19px -20px 20px 0px rgba(0, 0, 0, 0.241);
+    }
+    20% {
+        border-radius: 50% 50% 50% 0;
+        box-shadow: -20px 20px 20px rgba(0, 0, 0, 0.241);    
+    }
+    30% {
+        translate: 30vw 0%;
+    }
+    40% {
+        border-radius: 0 50% 50% 50%;
+        box-shadow: -19px -20px 20px 0px rgba(0, 0, 0, 0.241);       
+    }
+    50% {
+        translate: 50vw 35%;
+    }
+    60% {
+        border-radius: 50% 50% 50% 0;
+        box-shadow: -20px 20px 20px rgba(0, 0, 0, 0.241);
+    }
+    70% {
+        translate: 70vw 0%;
+    }
+    85% {
+        border-radius: 0 50% 50% 50%;
+        box-shadow: -19px -20px 20px 0px rgba(0, 0, 0, 0.241); 
+    }
+    100% {
+        translate: 75vw 35%;
+    }
+}
+.contain-for-box1 {
+    width: 90vw;
+    height: 38vh;
+    border-block: 5px solid black;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+.box1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: aliceblue;
+    width: 200px;
+    height: 200px;
+    background-color: skyblue;
+    border-radius: 10px;
+    border: 5px solid black;
+    /*
+    animation: example 2s;
+
+    Свойство animation задает анимацию для элемента.
+    В данном случае, анимация называется "example" и длится 2 секунды.
+
+    animation: name duration timing-function delay iteration-count direction fill-mode play-state; (shorthand "Шортхэнд")
+
+    animation-name:
+    
+    Описание: Указывает имя анимации, которая будет применена к элементу.
+    Возможные значения: Имя анимации, определенной с помощью @keyframes. Например, example.
+
+    animation-duration:
+    
+    Описание: Определяет продолжительность выполнения одного цикла анимации.
+    Возможные значения: Время в секундах (s) или миллисекундах (ms). Например, 2s (2 секунды).
+
+    animation-delay:
+    
+    Описание: Устанавливает задержку перед началом анимации.
+    Возможные значения: Время в секундах (s) или миллисекундах (ms). Например, 0.2s (0.2 секунды).
+
+    animation-iteration-count:
+    
+    Описание: Определяет, сколько раз будет повторяться анимация.
+    Возможные значения: Число повторений или infinite для бесконечного повторения. Например, infinite.
+
+    animation-timing-function:
+    
+    Описание: Определяет скорость изменения анимации на протяжении её выполнения.
+    Возможные значения: linear, ease, ease-in, ease-out, ease-in-out, step-start, step-end, а также функция cubic-bezier для создания пользовательских кривых. Например, linear.
+
+    animation-direction:
+    
+    Описание: Определяет направление выполнения анимации.
+    Возможные значения: normal (по умолчанию), reverse, alternate, alternate-reverse. Например, alternate.
+    */
+    animation-name: example;
+    animation-duration: 2s;
+    animation-delay: 0.2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+}
+.box1:hover {
+    /*
+        Свойство animation-play-state управляет состоянием воспроизведения анимации.
+        Значение 'paused' приостанавливает выполнение анимации.
+    */
+    animation-play-state: paused;
+}
