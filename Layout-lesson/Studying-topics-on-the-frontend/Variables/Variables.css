@@ -1,0 +1,109 @@
+/* 
+Переменные можно объявлять в :root для большей специфичности нежели html. 
+
+В корне сайта объявляются пременные, которые используются во всем файле, а не только в его части
+ */
+
+/* 
+К переменным :root можно относить параметры: 
+    - Цветов
+    - Шрифтов
+    - Границ
+    - Теней
+    - Размеров глобальных блоков
+    - Отступов между блоков
+    - z-index с разницей между друг другом 100
+    - Анимации
+    - Длительности, задержки и вида анимации
+*/
+
+/* Name переменной зависит от его положения в документе: если это root переменная, то записывается как Kebab case (через тире), а если в локальной части, то CamelCase (первое слово с маленькой, а последующие слитно с большой) */
+
+body {
+    --color-box-1: red;
+    --color-box-2: green;
+    --color-box-3: blue;
+    --button-border: 10px solid black;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style-type: none;
+    font-size: 2em;
+    width: 100px;
+    padding-left: 0px
+}
+.box1, .box2, .box3 {
+    margin: 20px;
+}
+a:has(.box1) {
+    /* Запись переменной */
+    color: var(--color-box-1);
+}
+a:has(.box2) {
+    /* Запись переменной с запасным значением */
+    color: var(--color-box-2, green);
+}
+a:has(.box3) {
+    color: var(--color-box-3);
+}
+.box1:hover, .box2:hover, .box3:hover {
+    color: brown;
+}
+.customBox {
+    user-select: none;
+    font-size: 2em;
+    color: white;
+}
+.customBox1 {
+    position: relative;
+    left: 35%;
+    --box-shadow-box-1: 10px 10px 10px 10px black;
+    width: 500px;
+    height: 500px;
+    background-color: cadetblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* Нельзя использовать переменные заданные дочерними элементами */
+
+    box-shadow: var(--box-shadow-box-2);
+    box-shadow: var(--box-shadow-box-1);
+}
+.customBox2 {
+    width: 400px;
+    height: 400px;
+    box-shadow: var(--box-shadow-box-1);
+    background-color: brown;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* Уже созданные переменные можно переопределять и применять по новой */
+
+    --box-shadow-box-1: 10px 10px 10px red;
+}
+.customBox3 {
+    width: 300px;
+    height: 300px;
+    background-color: rgb(243, 171, 78);
+    box-shadow: var(--box-shadow-box-1);
+}
+
+button {
+
+    /* Можно создавать переменные на основе уже созданнных переменных */
+
+    --buttonBorder: var(--button-border);
+    border: var(--buttonBorder);
+
+
+    width: 200px;
+    height: 50px;
+    transition: all 0.2s ease;
+}
+button:hover {
+    background-color: cadetblue;
+}
