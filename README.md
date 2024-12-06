@@ -4,6 +4,10 @@
 
 - ``` <link rel="stylesheet" href="/JavaScript_Education/normalize.css"> ```
 
+<p>Метатег для адаптива</p>
+
+- ```<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimun-scale=1.0">```
+
 <H1>Учебный материал</H1>
 
 <a href='https://miro.com/app/board/uXjVNGw7Jv8=/?share_link_id=860861096273' target="_blank">**Карта**</a>
@@ -19,6 +23,8 @@
 <a href='https://autoprefixer.github.io/ru/' target='_blank'>**Автопрефиксер (плагин для PostCSS для добавления вендорных префиксов в CSS)**</a>
 
 <a href='https://transfonter.org/' target='_blank'>**Transfonter (онлайн-генератор CSS, который позволяет конвертировать шрифты в форматы TTF, OTF, WOFF, WOFF2 или SVG)**</a>
+
+<a href='https://developer.mozilla.org/ru/docs/Web/CSS/Using_CSS_custom_properties'>**Переменные в CSS**</a>
 
 <h1>Сайты-пособия</h1>
 
