@@ -26,6 +26,8 @@
 
 <a href='https://developer.mozilla.org/ru/docs/Web/CSS/Using_CSS_custom_properties'>**Переменные в CSS**</a>
 
+<a href='https://9elements.github.io/fancy-border-radius/#56.41.0.30--.' target='_blank'>**Border Radius Generator**</a>
+
 <h1>Сайты-пособия</h1>
 
 <a href="https://flexboxfroggy.com/#ru" target='_blank'>**Тренажер по Flexbox Layout**</a>
