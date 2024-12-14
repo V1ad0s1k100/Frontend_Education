@@ -30,6 +30,9 @@
 
 <h1>Сайты-пособия</h1>
 
+<a href="https://coderun.yandex.ru/" target="_blank">**Тренажер от Яндекса (Code run)**</a>
+
+
 <a href="https://flexboxfroggy.com/#ru" target='_blank'>**Тренажер по Flexbox Layout**</a>
 
 <a href="https://cssgridgarden.com/#ru" target='_blank'>**Тренажер по Grid Layout**</a>
