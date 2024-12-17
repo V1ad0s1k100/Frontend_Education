@@ -142,6 +142,7 @@ body {
     --color-light: #FFFFFF;
     --color-dark-gray: #404040;
     --color-light-gray: #c4c4c4;
+    --color-dark-alternative: #131619;
 
     --border-radius: 30px;
     --border: 1px solid var(--color-light);
@@ -155,6 +156,8 @@ body {
     --container-padding-x: 15px;
 
     --transition-duration: 0.2s;
+
+    --header-hight: 90px;
 }
 body {
     background-color: var(--color-dark);
@@ -177,6 +180,19 @@ a {
 
 a:hover {
     color: var(--color-light-gray);
+}
+
+.visually-hidden {
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    clip: rect(0 0 0 0) !important;
+    clip-path: inset(100%) !important;
+    white-space: nowrap !important;
+    border-width: 0 !important;
 }
 
 input,
@@ -207,8 +223,9 @@ h6 {
     white-space: nowrap;
     border-radius: 30px;
     font-weight: 700;
-    font-size: 12px;
+    font-size: max(0.63vw, 12px);
     border: none;
+    user-select: none;
 }
 
 .header-book-button:hover {
@@ -221,6 +238,8 @@ h6 {
     align-items: center;
     padding-inline: var(--container-padding-x);
     column-gap: 20px;
+    background-color: var(--color-dark-alternative);
+    min-height: var(--header-hight);
 }
 
 .link-header-logo {
@@ -238,9 +257,10 @@ h6 {
     text-decoration: none;
     text-transform: uppercase;
     font-size: 12px;
+    font-size: max(0.63vw, 12px);
     font-weight: 700;
     letter-spacing: 1.2px;
-    height: 90px;
+    height: var(--header-hight);
     align-items: center;
     column-gap: 7px;
 }
@@ -248,7 +268,7 @@ h6 {
 .menu-header-link.menu-item-circle::after {
     content: "";
     width: 5px;
-    height: 5px;
+    aspect-ratio: 1; /* Свойство выставляет пропорцию сторон */
     border-radius: 50%;
     background-color: currentColor;
     
@@ -266,11 +286,12 @@ h6 {
     border: var(--border);
     border-radius: 50%;
     height: 40px;
-    width: 40px;
+    aspect-ratio: 1;
     background-color: transparent;
     justify-content: center;
     row-gap: 4px;
     color: var(--color-light);
+    user-select: none;
 }
 
 .header-book-burger:hover {
@@ -286,31 +307,126 @@ h6 {
     box-shadow: 16px 0 0 currentColor;
 }
 
+.banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  padding: 36px 70px;
+  min-height: calc(100vh - var(--header-hight));
+  color: var(--color-light);
+  background-color: var(--color-dark-alternative);
+}
+
+.banner-body {
+  text-transform: uppercase;
+}
+
+.banner-info {
+  display: flex;
+  align-items: end;
+  line-height: 1.27;
+  font-size: clamp(16px, 1.5vw, 30px);
+  font-weight: 700;
+}
+
+.banner-info::before {
+  content: "";
+  width: clamp(60px, 10.1vw, 194px);
+  aspect-ratio: 1;
+  background: url('./icons/bold-arrow-bottom-right.svg') center / contain no-repeat;
+  margin-right: 30px;
+}
+
+.banner-title {
+  font-size: min(18.75vw, 360px);
+  font-weight: 700;
+  line-height: 50px;
+  line-height: 1;
+}
+
+.banner-pagination-list {
+  display: flex;
+  justify-content: center;
+}
+
+.banner-pagination-item {
+  display: flex;
+}
+
+.banner-pagination-button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 7px;
+  background-color: transparent;
+  border: none;
+}
+
+.banner-pagination-button::after {
+  content: '';
+  width: 10px;
+  aspect-ratio: 1;
+  border: var(--border);
+  border-radius: 50%;
+  transition-duration: var(--transition-duration);
+}
+
+.banner-pagination-button.is-current::after {
+  background-color: var(--color-light);
+}
+
+.banner-pagination-button:not(.is-current):hover::after {
+  border-color: var(--color-light-gray);
+}
+
 @media (max-width: 1000px) {
     .header {
         flex-wrap: wrap;
         padding-top: 20px;
         row-gap: 10px;
-        padding-inline: 15px;
     }
+
+    .header, .banner {
+      padding-inline: 15px;
+    }
+
     .header-menu {
         order: 1;
         flex-basis: 1;
     }
+
     .menu-header-link {
         height: 50px;
     }
+
 }
 
 @media (max-width: 650px) {
     .menu-header-link {
         height: 32px;
     }
+
     .header-menu-list {
         column-gap: 30px;
     }
+
     .header {
         justify-content: center;
         row-gap: 20px;
     }
+
+    .banner-info {
+      margin-bottom: 5px;
+    }
+
+    .banner-info {
+      row-gap: 10px;
+    }
+}
+
+
+@media (max-width: 380px) {
+  .banner {
+    min-height: calc(100vh - var(--header-hight) - 54px);
+  }
 }
