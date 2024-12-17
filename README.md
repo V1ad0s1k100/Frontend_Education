@@ -28,7 +28,11 @@
 
 <a href='https://9elements.github.io/fancy-border-radius/#56.41.0.30--.' target='_blank'>**Border Radius Generator**</a>
 
+<a href="https://doka.guide/html/time/" target="_blank">**Формат дат для тега time**</a>
+
 <h1>Сайты-пособия</h1>
+
+<a href="https://coderun.yandex.ru/" target="_blank">**Тренажер от Яндекса (Code run)**</a>
 
 <a href="https://flexboxfroggy.com/#ru" target='_blank'>**Тренажер по Flexbox Layout**</a>
 
