@@ -125,4 +125,44 @@ console.log(1_000_000) // Большие числа можно записыва�
 
 // Пример Boolean
 
+const isTrue_1 = true
+const isFalse = false
+
+console.log(isTrue === isFalse) // false
+console.log(isTrue !== isFalse) // true
+
+// Пример null
+
+// null означает что переменная существует, но не имеет значения (как None в python)
+let data_1 = null 
+
+// Пример undefined
+
+let undVariable
+
+console.log(undVariable) // undefined
+
+undVariable = null
+
+console.log(undVariable) // null
+
+let copyUndVariable
+
+// Пример object
+
+const user = {} 
+console.log(
+      typeof user
+) // object
+
+// typeof показывает какой тип данных содержит переменная
+
+console.log(typeof 100)
+console.log(typeof 100n)
+console.log(typeof 'Hello')
+console.log(typeof {})
+console.log(typeof true)
+console.log(typeof undVariable) // переменную с null показывает как object (это баг в JS)
+console.log(typeof copyUndVariable)
+console.log(typeof (100 + 100))
 
