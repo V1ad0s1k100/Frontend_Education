@@ -130,6 +130,7 @@ function getAgeType(age) {
      return 'Взрослый'
 }
 
+
 console.log(getAgeType(20))
 console.log(getAgeType(-20))
 console.log(getAgeType(10))

@@ -1,0 +1,26 @@
+/* Неправильно задавать отступы и свойства смещения для БЭМ-блоков */
+header {
+    position: relative;
+    right: 10px;
+}
+
+.logo {
+    margin: 10px;
+}
+
+/* Правильно применять отступы и смещения для БЭМ-элемента */
+
+.footer__logo {
+    margin-top: 10px;
+}
+
+/* Обычно свойств в модификаторах немного */
+
+.header__button--big {
+    padding-inline: 10px;
+    margin-top: 50px;
+}
+
+.header__button--bordered {
+    color: red;
+}
