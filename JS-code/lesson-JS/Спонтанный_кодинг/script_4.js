@@ -186,7 +186,7 @@ console.log(solve(5)); // 42
 
 */
 
-
+/*
 
 function passwordGen() {
     const symbolsNumber = '1234567890';
@@ -216,3 +216,31 @@ function passwordGen() {
 for (let i = 0; i < 10; i++) {
     console.log(passwordGen())
 }
+
+*/
+
+function cheapestQuote(newspapers) {
+    const price = {
+        "+40": 3.85, 
+        "+20": 1.93, 
+        "+10": 0.97, 
+        "+5": 0.49, 
+        "+1": 0.10,
+    }
+
+    let finishPrice = 0
+    for (let element in price) {
+        while (newspapers) {
+            if (newspapers - +element === Math.abs(newspapers - +element)) {
+                newspapers -= +element
+                finishPrice += price[element]
+            } else {
+                break
+            }
+        }
+    }
+
+    return Number(finishPrice.toFixed(2))
+}
+
+console.log(cheapestQuote(80))
