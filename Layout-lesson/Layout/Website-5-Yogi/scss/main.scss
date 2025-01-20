@@ -1,5 +1,9 @@
-@import './base/font-style';
-@import './base/mixin';
-@import './base/normalize';
-@import './base/variables';
+@import "./base/font-styles";
+@import "./base/mixins";
+@import "./base/normalize";
+@import "./base/variables";
+@import "./blocks/header";
 
+body {
+  font-family: var(--font-family);
+}

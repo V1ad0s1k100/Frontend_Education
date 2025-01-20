@@ -1,25 +1,34 @@
 :root {
-    --white-color: #fff;
-    --black-color: #000;
-    --black-background: #120D26;
-    --black-color: #29253C;
-    --gray-color: #94959A;
-    --gray-lite-color: #D0CFD4;
-    --orange-color: #FF7058;
-    --orange-lite-background: #FF70580D;
-    --yellow-color: #FFC042;
+  --white-color: #fff;
+  --black-color: #000;
+  --black-background: #120d26;
+  --black-lite-color: #29253c;
+  --gray-color: #94959a;
+  --gray-lite-color: #d0cfd4;
+  --gray-lite-color-alternative-one: #F2F2F2;
+  --orange-color: #ff7058;
+  --orange-lite-background: #ff70580d;
+  --yellow-color: #ffc042;
 
-    --font-72: 72px;
-    --font-20: 20px;
-    --font-18: 18px;
-    --font-48: 48px;
-    --font-16: 16px;
-    --font-22: 22px;
-    --font-40: 40px;
-    --font-20: 20px;
-    --font-54: 54px;
-    --font-24: 24px;
-    --font-15: 15px;
 
-    --font-family: 'Poppins';
+  --font-72: 72px;
+  --font-20: 20px;
+  --font-18: 18px;
+  --font-48: 48px;
+  --font-16: 16px;
+  --font-22: 22px;
+  --font-40: 40px;
+  --font-20: 20px;
+  --font-54: 54px;
+  --font-24: 24px;
+  --font-15: 15px;
+
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  --font-family: "Poppins";
+
+  --padding-inline: 81px;
 }
