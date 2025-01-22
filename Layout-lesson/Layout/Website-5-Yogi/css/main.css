@@ -90,7 +90,7 @@ body {
   --black-lite-color: #29253c;
   --gray-color: #94959a;
   --gray-lite-color: #d0cfd4;
-  --gray-lite-color-alternative-one: #F2F2F2;
+  --gray-lite-color-alternative-one: #f2f2f2;
   --orange-color: #ff7058;
   --orange-lite-background: #ff70580d;
   --yellow-color: #ffc042;
@@ -109,8 +109,9 @@ body {
   --font-weight-medium: 500;
   --font-weight-semibold: 600;
   --font-weight-bold: 700;
-  --font-family: "Poppins";
+  --font-family: "Poppins", Arial, sans-serif;
   --padding-inline: 81px;
+  --transition: all 0.2s linear;
 }
 
 .header {
@@ -126,60 +127,88 @@ body {
   text-decoration: none;
 }
 
+.link__hover {
+  transition: var(--transition);
+}
+
 .header__logo {
   font-size: var(--font-48);
   font-weight: var(--font-weight-bold);
   color: var(--orange-color);
 }
 
-.header__menu {
+.navigation__menu {
   display: flex;
+}
+.navigation__menu--border-right {
+  border-right: 2px solid var(--gray-lite-color-alternative-one);
+}
+.navigation__menu--height {
   align-self: center;
-  height: -moz-min-content;
-  height: min-content;
 }
 
-.header__menu-box {
+.menu__list {
   display: flex;
 }
-.header__menu-box--border-right {
+.menu__list--border-right {
   border-right: 2px solid var(--gray-lite-color-alternative-one);
   padding-right: 30px;
 }
-.header__menu-box--padding-left {
-  padding-left: 45px;
+.menu__list--padding-left {
+  padding-left: 30px;
+}
+.menu__list--height {
+  height: 31px;
+}
+.menu__list--align {
+  align-self: center;
 }
 
-.header__menu-item {
+.menu__item {
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: var(--font-18);
   font-weight: var(--font-weight-semibold);
-  padding-right: 30px;
 }
-.header__menu-item--distance:not(:last-child) {
+.menu__item--distance {
   padding-right: 50px;
 }
+.menu__item--distance-right {
+  padding-right: 30px;
+}
 
-.header__menu-link {
-  padding: 10px;
-  text-decoration: none;
+.menu__link {
+  display: flex;
   color: var(--gray-color);
 }
-.header__menu-link--size {
+.menu__link--size {
   padding: 12px 16px;
 }
-.header__menu-link--black-color {
-  color: var(--black-background);
-}
-.header__menu-link--white-color {
+.menu__link--white-color {
   color: var(--white-color);
 }
-
-.header__menu-buttom {
+.menu__link--button-size {
+  width: 149px;
+  height: 100%;
+}
+.menu__link--border {
+  border-radius: 6px;
+}
+.menu__link--button-align {
+  align-items: center;
+  justify-content: center;
+}
+.menu__link--background-black {
   background-color: var(--black-background);
-  position: absolute;
+}
+
+.link__hover--hover:hover {
+  color: var(--black-background);
+}
+
+.menu__link--button-hover:hover {
+  scale: 1.05;
 }
 
 body {

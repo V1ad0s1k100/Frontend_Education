@@ -5,11 +5,10 @@
   --black-lite-color: #29253c;
   --gray-color: #94959a;
   --gray-lite-color: #d0cfd4;
-  --gray-lite-color-alternative-one: #F2F2F2;
+  --gray-lite-color-alternative-one: #f2f2f2;
   --orange-color: #ff7058;
   --orange-lite-background: #ff70580d;
   --yellow-color: #ffc042;
-
 
   --font-72: 72px;
   --font-20: 20px;
@@ -28,7 +27,9 @@
   --font-weight-semibold: 600;
   --font-weight-bold: 700;
 
-  --font-family: "Poppins";
+  --font-family: "Poppins", Arial, sans-serif;
 
   --padding-inline: 81px;
+
+  --transition: all 0.2s linear;
 }

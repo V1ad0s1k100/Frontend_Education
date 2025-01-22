@@ -2,7 +2,10 @@
 @import "./base/mixins";
 @import "./base/normalize";
 @import "./base/variables";
+
 @import "./blocks/header";
+
+@import "./effects/hover";
 
 body {
   font-family: var(--font-family);
