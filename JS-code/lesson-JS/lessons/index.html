@@ -1,90 +1,223 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JS</title>
     <script src="./script_14_массивы_1.js" defer></script>
-</head>
-<body>
+  </head>
+  <body>
     <style>
-        body {
-            background-color: rgb(27, 27, 27);
+      body {
+        background-color: rgb(27, 27, 27);
+      }
+
+      .header__logo {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+          sans-serif;
+        text-align: center;
+        font-size: 80px;
+        color: transparent;
+        -webkit-text-stroke: 0.2px white;
+      }
+
+      .header__logo--animation {
+        animation-name: backgroundAnimation;
+        animation-duration: 6s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+      }
+
+      .header__logo--background {
+        background-image: url('./picture/font-background-green.jpg');
+        background-clip: text;
+        background-size: 400px 600px;
+      }
+
+      @keyframes backgroundAnimation {
+        0% {
+          background-position: 0 0;
         }
 
-        .header__logo {
-            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            text-align: center;
-            font-size: 80px;
-            color: transparent;
-            -webkit-text-stroke: 0.2px white;
+        100% {
+          background-position: 0 -100%;
         }
+      }
 
-        .header__logo--animation {
-            animation-name: backgroundAnimation;
-            animation-duration: 6s;
-            animation-timing-function: linear;
-            animation-iteration-count: infinite;
-        }
+      .main__link {
+        display: block;
+        color: #ffa500;
+        font-size: 20px;
+        text-decoration: none;
+        max-width: max-content;
+        transition: all 0.2s ease;
+      }
 
-        .header__logo--background {
-            background-image: url('./picture/font-background-green.jpg');
-            background-clip: text;
-            background-size: 400px 600px;
-        }
+      .main__link--position,
+      .notes--position {
+        margin-left: 20px;
+      }
 
-        @keyframes backgroundAnimation {
-            0% {
-                background-position: 0 0;
-            }
+      .main__link--hover:hover {
+        color: #c58715;
+        scale: 1.1;
+        padding-block: 5px;
+      }
 
-            100% {
-                background-position: 0 -100%;
-            }
-        }
+      .notes__list,
+      .notes__title {
+        color: #ffa500;
+      }
 
-        .main__link {
-            display: block;
-            color: #ffa500;
-            font-size: 20px;
-            text-decoration: none;
-            max-width: max-content;
-            transition: all 0.2s ease;
-        }
+      .notes__title {
+        font-size: 30px;
+      }
 
-        .main__link--position {
-            margin-left: 20px;
-        }
+      .notes__list {
+        list-style: none;
+        font-size: 25px;
+      }
 
-        .main__link--hover:hover {
-            color: #c58715;
-            scale: 1.1;
-            padding-block: 5px;
-        }
+      .notes__list-text {
+        font-size: 25px;
+      }
+
+      .code--color {
+        color: white;
+      }
     </style>
+
     <header class="header">
-        <h1 class="header__logo header__logo--animation header__logo--background">Сайт для тестирования JS скриптов</h1>
+      <h1 class="header__logo header__logo--animation header__logo--background">
+        Сайт для тестирования JS скриптов
+      </h1>
     </header>
     <main class="main">
-        <a href="./script.js" target="_blank" class="main__link main__link--hover main__link--position">script.js</a>
-        <a href="./script_1.js" target="_blank" class="main__link main__link--hover main__link--position">script_1.js</a>
-        <a href="./script_2_арифметика.js" target="_blank" class="main__link main__link--hover main__link--position">script_2_арифметика.js</a>
-        <a href="./script_3_условия.js" target="_blank" class="main__link main__link--hover main__link--position">script_3_условия.js</a>
-        <a href="./script_4_взаимодействия_с_пользователем" target="_blank" class="main__link main__link--hover main__link--position">script_4_взаимодействия_с_пользователем</a>
-        <a href="./script_5_циклы.js" target="_blank" class="main__link main__link--hover main__link--position">script_5_циклы.js</a>
-        <a href="./script_function.js" target="_blank" class="main__link main__link--hover main__link--position">script_function.js</a>
-        <a href="./виды_функций.js" target="_blank" class="main__link main__link--hover main__link--position">виды_функций.js</a>
-        <a href="./script_9_объекты.js" target="_blank" class="main__link main__link--hover main__link--position">script_9_объекты.js</a>
-        <a href="./script_10_объекты.js" target="_blank" class="main__link main__link--hover main__link--position">script_10_объекты.js</a>
-        <a href="./script_11_key_this.js" target="_blank" class="main__link main__link--hover main__link--position">script_11_key_this</a>
-        <a href="./script_12_методы_примитивов.js" target="_blank" class="main__link main__link--hover main__link--position">script_12_методы_примитивов.js</a>
-        <a href="./script_13_методы_строк.js" target="_blank" class="main__link main__link--hover main__link--position">script_13_методы_строк.js</a>
+      <a
+        href="./script.js"
+        target="_blank"
+        class="main__link main__link--hover main__link--position"
+        >script.js</a
+      >
+      <a
+        href="./script_1.js"
+        target="_blank"
+        class="main__link main__link--hover main__link--position"
+        >script_1.js</a
+      >
+      <a
+        href="./script_2_арифметика.js"
+        target="_blank"
+        class="main__link main__link--hover main__link--position"
+        >script_2_арифметика.js</a
+      >
+      <a
+        href="./script_3_условия.js"
+        target="_blank"
+        class="main__link main__link--hover main__link--position"
+        >script_3_условия.js</a
+      >
+      <a
+        href="./script_4_взаимодействия_с_пользователем"
+        target="_blank"
+        class="main__link main__link--hover main__link--position"
+        >script_4_взаимодействия_с_пользователем</a
+      >
+      <a
+        href="./script_5_циклы.js"
+        target="_blank"
+        class="main__link main__link--hover main__link--position"
+        >script_5_циклы.js</a
+      >
+      <a
+        href="./script_function.js"
+        target="_blank"
+        class="main__link main__link--hover main__link--position"
+        >script_function.js</a
+      >
+      <a
+        href="./виды_функций.js"
+        target="_blank"
+        class="main__link main__link--hover main__link--position"
+        >виды_функций.js</a
+      >
+      <a
+        href="./script_9_объекты.js"
+        target="_blank"
+        class="main__link main__link--hover main__link--position"
+        >script_9_объекты.js</a
+      >
+      <a
+        href="./script_10_объекты.js"
+        target="_blank"
+        class="main__link main__link--hover main__link--position"
+        >script_10_объекты.js</a
+      >
+      <a
+        href="./script_11_key_this.js"
+        target="_blank"
+        class="main__link main__link--hover main__link--position"
+        >script_11_key_this</a
+      >
+      <a
+        href="./script_12_методы_примитивов.js"
+        target="_blank"
+        class="main__link main__link--hover main__link--position"
+        >script_12_методы_примитивов.js</a
+      >
+      <a
+        href="./script_13_методы_строк.js"
+        target="_blank"
+        class="main__link main__link--hover main__link--position"
+        >script_13_методы_строк.js</a
+      >
+      <section class="notes notes--position">
+        <div class="notes__title"><h2>Заметки по JS</h2></div>
+        <ul class="notes__list">
+          <li class="notes__list-item">
+            <h3>Циклы</h3>
+            <p class="notes__list-text">
+              Для перебора свойств объекта используется цикл
+              <code class="code--color">for-in</code>. Он проходит по всем
+              перечислимым свойствам объекта.
+            </p>
+            <p class="notes__list-text">
+              Для перебора итерируемых объектов, таких как массивы, строки, Map,
+              Set и т.д. используется
+              <code class="code--color">for-of</code>
+            </p>
+            <p class="notes__list-text">
+              Цикл <code class="code--color">for</code> используется для
+              итерации с известным количеством повторений
+            </p>
+            <p class="notes__list-text">
+              Цикл <code class="code--color">while</code> выполняется до тех
+              пор, пока условие истинно
+            </p>
+            <p class="notes__list-text">
+              Цикл <code class="code--color">do-while</code> выполняется хотя бы
+              один раз, а затем повторяется, пока условие истинно
+            </p>
+          </li>
+          <li class="notes__list-item"><h3>Следующий раздел</h3></li>
+          <li class="notes__list-item"><h3>Следующий раздел</h3></li>
+          <li class="notes__list-item"><h3>Следующий раздел</h3></li>
+          <li class="notes__list-item">
+            <h3>Полезные фичи в VS Code</h3>
+            <p class="notes__list-text" style="padding-left: 30px">
+              Нажатие <code class="code--color">Ctrl+Shift+L</code> позволяет
+              изменить все вхождения выбранного текста одновременно.
+            </p>
+          </li>
+        </ul>
+      </section>
     </main>
+    <script src="./script_3_условия.js"></script>
     <!--
     <script src="./script.js"></script>
     <script src="./script_1.js"></script>
     <script src="./script_2_арифметика.js"></script>
-    <script src="./script_3_условия.js"></script>
+    
     <script src="./script_4_взаимодействия_с_пользователем"></script>
     <script src="./script_5_циклы.js"></script>
     <script src="./script_function.js"></script>
@@ -95,5 +228,5 @@
     <script src="./script_12_методы_примитивов.js"></script>
     <script src="./script_13_методы_строк.js"></script>
     -->
-</body>
+  </body>
 </html>

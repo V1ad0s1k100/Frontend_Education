@@ -47,7 +47,7 @@ delete secondUser.name
 delete secondUser['is developer']
 
 console.log(secondUser)
-
+ 
 // Манипулировать константным объектом мы можем, а переопределять его нет
 
 // Мы может использовать в качестве значений уже созданные ранее переменные

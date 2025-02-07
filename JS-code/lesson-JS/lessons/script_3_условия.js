@@ -54,7 +54,7 @@ false || false // Логическое ИЛИ
 
 const result = null || "" || 100 || 200 || 300
 
-console.log(result)
+console.log(result, 'result')
 
 false && false // Логическое И
 
@@ -69,7 +69,7 @@ false && false // Логическое И
 */
 
 const result_1 = null && "" && 100 && 200 && 300
-console.log(result_1)
+console.log(result_1, 'result_1')
 
 !false // Логическое НЕ
 
@@ -86,8 +86,8 @@ console.log(!!0)
 // Поэтому результатом выполнения этой строки будет false.
 
 // Равносильно приведенному выше
-console.log(Boolean('0'))
-console.log(Boolean(0))
+console.log(Boolean('0'), 'boolean_1')
+console.log(Boolean(0), 'boolean_2')
 
 const a = null
 const b = 100
@@ -104,5 +104,5 @@ const result_3 = a ?? b
 
 console.log('')
 
-console.log(result_2)
-console.log(result_3)
+console.log(result_2, 'result_2')
+console.log(result_3, 'result_3')
