@@ -224,37 +224,51 @@
 //   `)
 // );
 
-// Задача с codewars
+// Задача с codewars (не решена)
 
-function parseMolecule(formula) {
-  let countString = 0;
-  let countNumber = 0;
-  const splitFormul = formula.forEach((element) => {
-    if (count != null && typeof Number(element) === "number") {
-      countString = 0;
-      countNumber++;
-    } else {
-      count++;
-    }
-  });
+// function parseMolecule(formula) {
+//   const formulObj = {};
+//   const formulArr = formula
+//     .match(/[A-Z][a-z]?|\d+|[\[\]\(\)\{\}]/g)
+//     .map((element) => (/^\d+$/.test(element) ? Number(element) : element))
+//     .forEach((element, index, arr) => {
+//       if (
+//         typeof element === "number" &&
+//         element != "(" &&
+//         element != ")" &&
+//         element != "[" &&
+//         element != "]"
+//       ) {
+//         return;
+//       } else {
+//         if (arr[index + 1]) {
+//           formulObj[element] = arr[index + 1];
+//         } else {
+//           formulObj[element] = 1;
+//         }
+//       }
+//     });
 
-  const formulObj = {};
+//   return formulObj;
+// }
 
-  if (
-    splitFormul.indexOf("(") === -1 &&
-    splitFormul.indexOf(")") === -1 &&
-    splitFormul.indexOf("[") === -1 &&
-    splitFormul.indexOf("]") === -1
-  ) {
-    splitFormul.forEach((element, index, arr) => {
-      console.log(element);
-    });
-  }
-  return formulObj;
-}
+// console.log(parseMolecule("H2O"));
+// console.log("\n");
+// console.log(parseMolecule("Mg(OH)2"));
+// console.log("\n");
+// console.log(parseMolecule("K4[ON(SO3)2]2"));
 
-console.log(parseMolecule("Mg2O"));
-console.log("\n");
-console.log(parseMolecule("Mg(OH)2"));
-console.log("\n");
-console.log(parseMolecule("K4[ON(SO3)2]2"));
+// Задача codewars (решена)
+
+// domainName = (url) =>
+//   url.startsWith("http://") || url.startsWith("https://")
+//     ? new URL(url).hostname.replace("www.", "").split(".")[0]
+//     : new URL("http://" + url).hostname.replace("www.", "").split(".")[0];
+
+// console.log(domainName("http://github.com/carbonfive/raygun"));
+// console.log(domainName("http://www.zombie-bites.com"));
+// console.log(domainName("https://www.cnet.com"));
+// console.log(domainName("http://google.co.jp"));
+// console.log(domainName("www.xakep.ru"));
+// console.log(domainName("https://youtube.com"));
+

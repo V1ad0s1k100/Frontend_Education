@@ -1,5 +1,7 @@
-.map(
-    //   (element) =>
-    //     `${element[0]} - ${((element[1] / sumSymbol) * 100).toFixed(2)}%`
-    // )
-    // .join("\n");
+console.log(
+  determinant([
+    [2, 4, 2],
+    [3, 1, 1],
+    [1, 2, 0],
+  ])
+);
