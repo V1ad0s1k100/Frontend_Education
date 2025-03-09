@@ -1,15 +1,15 @@
 // Браузерное окружение: DOM, BOM
-console.log(window); // Объект window представляет собой глобальный объект, который содержит все свойства и методы браузера
+console.log(window) // Объект window представляет собой глобальный объект, который содержит все свойства и методы браузера
 
-console.log("\nОсновной JavaScript");
+console.log('\nОсновной JavaScript')
 
 // Основной JavaScript
-console.log(window.Math); // Объект Math предоставляет математические функции и константы
-console.log(window.Object.keys({name: "Владислав", age: 17})); // Метод Object.keys возвращает массив из собственных перечисляемых свойств переданного объекта
-console.log(window.Number("123")); // Функция Number преобразует строку в число
-console.log(window.Boolean(0)); // Функция Boolean преобразует значение в логическое значение
+console.log(window.Math) // Объект Math предоставляет математические функции и константы
+console.log(window.Object.keys({ name: 'Владислав', age: 17 })) // Метод Object.keys возвращает массив из собственных перечисляемых свойств переданного объекта
+console.log(window.Number('123')) // Функция Number преобразует строку в число
+console.log(window.Boolean(0)) // Функция Boolean преобразует значение в логическое значение
 
-console.log("\nBOM (Browser Object Model)");
+console.log('\nBOM (Browser Object Model)')
 
 // BOM (Browser Object Model)
 
@@ -23,15 +23,15 @@ console.log("\nBOM (Browser Object Model)");
 // 2. Информация о браузере: Предоставляет информацию о браузере и окружении пользователя, такую как user agent, размер экрана и история браузера.
 // 3. Навигация: Позволяет управлять навигацией браузера, например, изменять URL, перезагружать страницу и перемещаться по истории браузера.
 
-console.log(window.navigator); // Объект navigator предоставляет информацию о браузере и операционной системе пользователя
-console.log(window.screen); // Объект screen предоставляет информацию об экране пользователя
-console.log(window.location); // Объект location предоставляет информацию о текущем URL и методы для его изменения
-console.log(window.history); // Объект history предоставляет методы для управления историей браузера
-console.log(window.frames); // Объект frames представляет собой коллекцию всех фреймов в текущем окне
-console.log(window.fetch); // Метод fetch используется для выполнения HTTP-запросов
-console.log(window.XMLHttpRequest); // Объект XMLHttpRequest используется для выполнения HTTP-запросов
+console.log(window.navigator) // Объект navigator предоставляет информацию о браузере и операционной системе пользователя
+console.log(window.screen) // Объект screen предоставляет информацию об экране пользователя
+console.log(window.location) // Объект location предоставляет информацию о текущем URL и методы для его изменения
+console.log(window.history) // Объект history предоставляет методы для управления историей браузера
+console.log(window.frames) // Объект frames представляет собой коллекцию всех фреймов в текущем окне
+console.log(window.fetch) // Метод fetch используется для выполнения HTTP-запросов
+console.log(window.XMLHttpRequest) // Объект XMLHttpRequest используется для выполнения HTTP-запросов
 
-console.log("\nDOM (Document Object Model)");
+console.log('\nDOM (Document Object Model)')
 
 // DOM (Document Object Model)
 
@@ -45,10 +45,10 @@ console.log("\nDOM (Document Object Model)");
 // 2. Манипуляция содержимым: Позволяет программам динамически изменять структуру, стиль и содержимое документа.
 // 3. Обработка событий: Обеспечивает способ обработки событий, таких как взаимодействие пользователя с документом.
 
-console.dir(document); // Объект document представляет собой корневой элемент HTML-документа
+console.dir(document) // Объект document представляет собой корневой элемент HTML-документа
 
-console.log("Ширина окна браузера: ", window.innerWidth); // Свойство innerWidth возвращает ширину области просмотра окна
-console.log("Высота окна браузера: ", window.innerHeight); // Свойство innerHeight возвращает высоту области просмотра окна
+console.log('Ширина окна браузера: ', window.innerWidth) // Свойство innerWidth возвращает ширину области просмотра окна
+console.log('Высота окна браузера: ', window.innerHeight) // Свойство innerHeight возвращает высоту области просмотра окна
 
 // Если объявить переменные с зарезервированными именами до их объявления,
 // то при их вызове выведется не значение зарезервированн��го слова,
@@ -58,12 +58,12 @@ console.log("Высота окна браузера: ", window.innerHeight); // 
 // Для того чтобы такого не происходило, нужно вызывать
 // переменные с зарезервированными именами с ключевым словом window
 
-const innerWidth = 100;
-const innerHeight = 200;
+const innerWidth = 100
+const innerHeight = 200
 
 // Однако не все зарезервированные слова можно использовать в качестве переменных
 // const location = "Москва";
-console.log(window.location.href); // Свойство href объекта location возвращает текущий URL
+console.log(window.location.href) // Свойство href объекта location возвращает текущий URL
 
 // Но если внести в объявление скрипта type="module",
 // то можно использовать зарезервированные слова в качестве переменных
@@ -75,33 +75,33 @@ console.log(window.location.href); // Свойство href объекта locat
 // выдавать undefined. Для того чтобы этого избежать нужно пользоваться
 // ключевым словом window
 
-console.log('\n"location" внутри функции');
+console.log('\n"location" внутри функции')
 
 const someSn = () => {
-    const location = "Москва"; // Локальная переменная location
-    console.log(location); // Вывод локальной переменной location
-    console.log(window.location.href); // Вывод глобального свойства location.href
-};
+  const location = 'Москва' // Локальная переменная location
+  console.log(location) // Вывод локальной переменной location
+  console.log(window.location.href) // Вывод глобального свойства location.href
+}
 
-someSn();
+someSn()
 
-console.log('\n"location" внутри функции');
+console.log('\n"location" внутри функции')
 
 const fn = () => {
-    const location = "Москва"; // Локальная переменная location
+  const location = 'Москва' // Локальная переменная location
 
-    console.log(
-        "Текущий полный URL-адрес: ",
-        location.href, // ❌ Ошибка, так как location - это строка, а не объект location
-    );
+  console.log(
+    'Текущий полный URL-адрес: ',
+    location.href, // ❌ Ошибка, так как location - это строка, а не объект location
+  )
 
-    console.log(
-        "Текущий полный URL-адрес: ",
-        window.location.href, // ✅ Правильный способ получения текущего URL
-    );
-};
+  console.log(
+    'Текущий полный URL-адрес: ',
+    window.location.href, // ✅ Правильный способ получения текущего URL
+  )
+}
 
-fn();
+fn()
 
 // Рекомендуется не использовать переменную с именем document,
 // так как она зачастую может просто сломать весь функционал приложения

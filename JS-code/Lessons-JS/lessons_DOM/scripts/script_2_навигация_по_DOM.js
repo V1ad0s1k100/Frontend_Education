@@ -22,10 +22,16 @@ console.log('Отдельно тело сайта: ', document.body)
 console.log('\nРодительский элемент над <body>: ', document.body.parentElement)
 
 // Поиск соседнего элемента перед body
-console.log('\nСоседний элемент перед <body>: ', document.body.previousElementSibling)
+console.log(
+  '\nСоседний элемент перед <body>: ',
+  document.body.previousElementSibling,
+)
 
 // Поиск соседнего элемента после body
-console.log('\nСоседний элемент после <body>: ', document.body.nextElementSibling)
+console.log(
+  '\nСоседний элемент после <body>: ',
+  document.body.nextElementSibling,
+)
 
 // Поиск дочерних элементов body
 console.log('\nСписок дочерних элементов <body>: ', document.body.children)
@@ -37,7 +43,10 @@ console.log('\nСписок дочерних элементов <body>: ', bodyC
 // Добавление нового элемента в конец body
 const newButtonElement = document.createElement('button')
 document.body.appendChild(newButtonElement)
-console.log('\nСписок дочерних элементов <body> после добавления кнопки: ', bodyChildren)
+console.log(
+  '\nСписок дочерних элементов <body> после добавления кнопки: ',
+  bodyChildren,
+)
 
 // Преобразование HTML коллекции в массив и перебор элементов
 const bodyChildrenArray = [...bodyChildren].forEach((el) => console.log(el))
@@ -49,29 +58,62 @@ bodyChildren = document.body.children[0]
 
 console.log('\nЗаметка <div>: ', bodyChildren)
 console.log('\nПервый дочерний элемент внутри <div>: ', bodyChildren.firstChild)
-console.log('\nПоследний дочерний элемент внутри <div>: ', bodyChildren.lastChild)
+console.log(
+  '\nПоследний дочерний элемент внутри <div>: ',
+  bodyChildren.lastChild,
+)
 
 // Поиск родительского узла для html
 const elementHTML = document.documentElement
 console.log('\nЗаметка <html>: ', elementHTML)
-console.log('\nРодительский узел для <html> через parentNode: ', elementHTML.parentNode)
-console.log('\nРодительский узел для <html> через parentElement: ', elementHTML.parentElement)
+console.log(
+  '\nРодительский узел для <html> через parentNode: ',
+  elementHTML.parentNode,
+)
+console.log(
+  '\nРодительский узел для <html> через parentElement: ',
+  elementHTML.parentElement,
+)
 
 // Отличие parentNode и parentElement
 // parentElement возвращает только DOM-узлы, parentNode возвращает любые узлы
 
 const divElement = document.body.children[0]
 
-console.log('Соседний элемент перед <div> при помощи previousElementSibling: ', divElement.previousElementSibling)
-console.log('Соседний элемент перед <div> при помощи previousSibling: ', divElement.previousSibling)
+console.log(
+  'Соседний элемент перед <div> при помощи previousElementSibling: ',
+  divElement.previousElementSibling,
+)
+console.log(
+  'Соседний элемент перед <div> при помощи previousSibling: ',
+  divElement.previousSibling,
+)
 
-console.log('Соседний элемент после <div> при помощи nextElementSibling: ', divElement.nextElementSibling)
-console.log('Соседний элемент после <div> при помощи nextSibling: ', divElement.nextSibling)
+console.log(
+  'Соседний элемент после <div> при помощи nextElementSibling: ',
+  divElement.nextElementSibling,
+)
+console.log(
+  'Соседний элемент после <div> при помощи nextSibling: ',
+  divElement.nextSibling,
+)
 
-console.log('Первый дочерний элемент внутри <div> при помощи firstElementChild: ', divElement.firstElementChild)
-console.log('Первый дочерний элемент внутри <div> при помощи firstChild: ', divElement.firstChild)
+console.log(
+  'Первый дочерний элемент внутри <div> при помощи firstElementChild: ',
+  divElement.firstElementChild,
+)
+console.log(
+  'Первый дочерний элемент внутри <div> при помощи firstChild: ',
+  divElement.firstChild,
+)
 
-console.log('Последний дочерний элемент внутри <div> при помощи lastElementChild: ', divElement.lastElementChild)
-console.log('Последний дочерний элемент внутри <div> при помощи lastChild: ', divElement.lastChild)
+console.log(
+  'Последний дочерний элемент внутри <div> при помощи lastElementChild: ',
+  divElement.lastElementChild,
+)
+console.log(
+  'Последний дочерний элемент внутри <div> при помощи lastChild: ',
+  divElement.lastChild,
+)
 
 console.log('Дочерние узлы внутри <div>: ', divElement.childNodes)

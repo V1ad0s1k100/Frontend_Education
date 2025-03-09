@@ -1,16 +1,16 @@
 // Явное и не явное преобразование типова данных
 
-// Не явное 
+// Не явное
 
 const num = 111
 const str = '222'
-const result = num + str 
+const result = num + str
 
 console.log(result, typeof result) // 111222, string (произошло не явное преобразования num в string)
 
- // Не явное преобразование строк в числа показывает ошибку, но выводит как обычно
+// Не явное преобразование строк в числа показывает ошибку, но выводит как обычно
 
-// console.log('16' / '8', typeof ('16' / '8')) 
+// console.log('16' / '8', typeof ('16' / '8'))
 
 // Явное
 // Преобразование в строку
@@ -38,7 +38,7 @@ console.log(Number(null)) // Логический 0
 console.log(Number(undefined)) // NaN
 console.log('')
 // Преобразование в Boolean
-// Все числа, кроме 0 преобразуются в true, а 0 в false 
+// Все числа, кроме 0 преобразуются в true, а 0 в false
 console.log(Boolean(-1))
 console.log(Boolean(0))
 console.log(Boolean(1))
@@ -49,4 +49,3 @@ console.log(Boolean('Hello'))
 console.log(Boolean('0'))
 console.log(Boolean(' '))
 console.log(Boolean(''))
-
