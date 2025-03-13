@@ -4,26 +4,42 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-      body {
-        background-color: #333;
-        color: #fff;
-        font-size: 40px;
-        font-family: Arial, Helvetica, sans-serif;
-        min-height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-    </style>
-    <script src="script.js" type="module" defer></script>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <p class="output"></p>
+    <header class="header">
+      <div class="header__container">
+        <!-- Логотип -->
+        <a href="/" class="header__logo">
+          <img src="logo.png" alt="Логотип сайта" />
+        </a>
+
+        <!-- Навигационное меню -->
+        <nav class="header__nav">
+          <ul class="header__nav-list">
+            <li class="header__nav-item">
+              <a href="/" class="header__nav-link">Главная</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="/about" class="header__nav-link">О нас</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="/services" class="header__nav-link">Услуги</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="/blog" class="header__nav-link">Блог</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="/contact" class="header__nav-link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- Кнопка или дополнительные элементы -->
+        <div class="header__actions">
+          <a href="/login" class="header__button">Войти</a>
+        </div>
+      </div>
+    </header>
   </body>
 </html>
