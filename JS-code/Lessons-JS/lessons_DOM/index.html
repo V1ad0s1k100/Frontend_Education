@@ -9,8 +9,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>DOM and BOM</title>
 
+    <link rel="stylesheet" href="style.css" />
+
     <style>
-      body {
+      /* body {
         background-color: #333;
       }
       .main-box {
@@ -74,18 +76,50 @@
 
       .level-three .internal-list {
         color: white;
+      } */
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        display: flex;
+        min-height: 100vh;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .block1,
+      .block2 {
+        width: 100px;
+        aspect-ratio: 1;
+        border: 5px solid red;
+        border-radius: 5px;
+      }
+
+      .block1::after {
+        content: "";
+        display: block;
+        width: 50px;
+        height: 50px;
+        background-color: black;
       }
     </style>
 
-    <script src="./scripts/script_3_поиск_элементов.js" defer></script>
     <!--
+    <script src="./scripts/script_3_поиск_элементов.js" defer></script>
     <script src="./script_1_DOM_и_BOM.js"></script>
     <script src="scripts/script_2_навигация_по_DOM.js" async></script>
     -->
+
+    <script src="./scripts/script_4_свойства_в_DOM.js" defer></script>
   </head>
 
   <body>
-    <div class="main-box">
+    <!-- <div class="main-box">
       <p class="main-text">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut autem
         commodi cumque dolorum ea impedit, nobis optio sunt ut voluptates.
@@ -170,6 +204,11 @@
         <li class="slider__slide" data-js-slider-slide="">...</li>
         <li class="slider__slide" data-js-slider-slide="">...</li>
       </ul>
-    </secion>
+    </secion> -->
+    <main class="main">
+      <div class="block1"></div>
+      <div class="block2"></div>
+      <div class="block3"></div>
+    </main>
   </body>
 </html>
