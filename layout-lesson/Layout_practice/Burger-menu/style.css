@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box-burger {
+  position: relative;
+  width: 45px;
+  height: 35px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  user-select: none;
+}
+
+.box-burger:hover {
+  cursor: pointer;
+}
+
+.box-burger__item {
+  position: relative;
+  width: 100%;
+  height: 4px;
+  border-radius: 10px;
+  background-color: #000;
+  transition: 0.3s;
+}
+
+.active {
+  position: absolute;
+}
+
+@keyframes burgerMidlleStickLeft {
+  10% {
+    opacity: 0.9;
+    right: 10%;
+  }
+
+  100% {
+    opacity: 0;
+    right: 100%;
+  }
+}
+
+@keyframes burgerMidlleStickRight {
+  10% {
+    opacity: 0.1;
+    right: 90%;
+  }
+
+  100% {
+    opacity: 1;
+    right: 0%;
+  }
+}
