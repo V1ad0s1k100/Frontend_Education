@@ -7,4 +7,4 @@
 Поключение репозитория:
 
 ```bash
-git remote add origin "https://github.com/V1ad0s1k100/Frontend_Education.git"
+git clone "https://github.com/V1ad0s1k100/Frontend_Education.git"
